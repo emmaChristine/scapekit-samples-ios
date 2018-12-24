@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25B1EFEA21B325CB00AC4A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B1EFE921B325CB00AC4A6C /* AppDelegate.swift */; };
+		25B1EFEC21B325CB00AC4A6C /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B1EFEB21B325CB00AC4A6C /* ARViewController.swift */; };
+		25B1EFF121B325CC00AC4A6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B1EFF021B325CC00AC4A6C /* Assets.xcassets */; };
+		25B1EFF421B325CC00AC4A6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B1EFF221B325CC00AC4A6C /* LaunchScreen.storyboard */; };
+		25B1F00F21B3437600AC4A6C /* ScapeKitApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25B1F00E21B3437600AC4A6C /* ScapeKitApiKeys.plist */; };
+		370A4A5A5E0497B61B747106 /* libPods-scapekit-arsession.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBCC71A5440BA2540E3496D /* libPods-scapekit-arsession.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C49B32F0DC64A0CB4D04549 /* Pods-scapekit-arsession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scapekit-arsession.release.xcconfig"; path = "Target Support Files/Pods-scapekit-arsession/Pods-scapekit-arsession.release.xcconfig"; sourceTree = "<group>"; };
+		25B1EFE621B325CB00AC4A6C /* scapekit-arsession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scapekit-arsession.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B1EFE921B325CB00AC4A6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		25B1EFEB21B325CB00AC4A6C /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		25B1EFF021B325CC00AC4A6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25B1EFF321B325CC00AC4A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25B1EFF521B325CC00AC4A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25B1EFFC21B3269200AC4A6C /* ScapeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScapeKit.framework; path = "pixscape-ios/ScapeKit.framework"; sourceTree = "<group>"; };
+		25B1EFFE21B326D100AC4A6C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		25B1F00021B326D600AC4A6C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		25B1F00221B326E000AC4A6C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		25B1F00421B326E500AC4A6C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		25B1F00621B326EF00AC4A6C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		25B1F00821B326F500AC4A6C /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		25B1F00A21B326F900AC4A6C /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		25B1F00C21B3289F00AC4A6C /* ScapeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScapeKit.framework; path = "scapekit-arsession/ScapeKit.framework"; sourceTree = "<group>"; };
+		25B1F00E21B3437600AC4A6C /* ScapeKitApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ScapeKitApiKeys.plist; sourceTree = "<group>"; };
+		263A79272FA46EDDBC3ACF27 /* Pods-scapekit-arsession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scapekit-arsession.debug.xcconfig"; path = "Target Support Files/Pods-scapekit-arsession/Pods-scapekit-arsession.debug.xcconfig"; sourceTree = "<group>"; };
+		2E8B28BF669E9517A9E8B26B /* Pods-scapekit-arsession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scapekit-arsession.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scapekit-arsession/Pods-scapekit-arsession.debug.xcconfig"; sourceTree = "<group>"; };
+		7F4D2DEC860F431E6EACEF32 /* Pods-scapekit-arsession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scapekit-arsession.release.xcconfig"; path = "Pods/Target Support Files/Pods-scapekit-arsession/Pods-scapekit-arsession.release.xcconfig"; sourceTree = "<group>"; };
+		9EBCC71A5440BA2540E3496D /* libPods-scapekit-arsession.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scapekit-arsession.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25B1EFE321B325CB00AC4A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370A4A5A5E0497B61B747106 /* libPods-scapekit-arsession.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25B1EFDD21B325CB00AC4A6C = {
+			isa = PBXGroup;
+			children = (
+				25B1EFE821B325CB00AC4A6C /* scapekit-arsession */,
+				25B1EFE721B325CB00AC4A6C /* Products */,
+				25B1EFFB21B3269100AC4A6C /* Frameworks */,
+				C7530CD010624F5E43E2B36A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		25B1EFE721B325CB00AC4A6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25B1EFE621B325CB00AC4A6C /* scapekit-arsession.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25B1EFE821B325CB00AC4A6C /* scapekit-arsession */ = {
+			isa = PBXGroup;
+			children = (
+				25B1EFE921B325CB00AC4A6C /* AppDelegate.swift */,
+				25B1EFEB21B325CB00AC4A6C /* ARViewController.swift */,
+				25B1EFF021B325CC00AC4A6C /* Assets.xcassets */,
+				25B1EFF221B325CC00AC4A6C /* LaunchScreen.storyboard */,
+				25B1EFF521B325CC00AC4A6C /* Info.plist */,
+				25B1F00E21B3437600AC4A6C /* ScapeKitApiKeys.plist */,
+			);
+			path = "scapekit-arsession";
+			sourceTree = "<group>";
+		};
+		25B1EFFB21B3269100AC4A6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25B1F00C21B3289F00AC4A6C /* ScapeKit.framework */,
+				25B1F00A21B326F900AC4A6C /* ARKit.framework */,
+				25B1F00821B326F500AC4A6C /* SceneKit.framework */,
+				25B1F00621B326EF00AC4A6C /* AVFoundation.framework */,
+				25B1F00421B326E500AC4A6C /* CoreMotion.framework */,
+				25B1F00221B326E000AC4A6C /* CoreLocation.framework */,
+				25B1F00021B326D600AC4A6C /* libc++.tbd */,
+				25B1EFFE21B326D100AC4A6C /* libz.tbd */,
+				25B1EFFC21B3269200AC4A6C /* ScapeKit.framework */,
+				9EBCC71A5440BA2540E3496D /* libPods-scapekit-arsession.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7530CD010624F5E43E2B36A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				263A79272FA46EDDBC3ACF27 /* Pods-scapekit-arsession.debug.xcconfig */,
+				1C49B32F0DC64A0CB4D04549 /* Pods-scapekit-arsession.release.xcconfig */,
+				2E8B28BF669E9517A9E8B26B /* Pods-scapekit-arsession.debug.xcconfig */,
+				7F4D2DEC860F431E6EACEF32 /* Pods-scapekit-arsession.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25B1EFE521B325CB00AC4A6C /* scapekit-arsession */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B1EFF821B325CC00AC4A6C /* Build configuration list for PBXNativeTarget "scapekit-arsession" */;
+			buildPhases = (
+				D37E6E4291547408434989B5 /* [CP] Check Pods Manifest.lock */,
+				25B1EFE221B325CB00AC4A6C /* Sources */,
+				25B1EFE321B325CB00AC4A6C /* Frameworks */,
+				25B1EFE421B325CB00AC4A6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "scapekit-arsession";
+			productName = "pixscape-ios";
+			productReference = 25B1EFE621B325CB00AC4A6C /* scapekit-arsession.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25B1EFDE21B325CB00AC4A6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Scape Technologies";
+				TargetAttributes = {
+					25B1EFE521B325CB00AC4A6C = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 25B1EFE121B325CB00AC4A6C /* Build configuration list for PBXProject "scapekit-arsession" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25B1EFDD21B325CB00AC4A6C;
+			productRefGroup = 25B1EFE721B325CB00AC4A6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25B1EFE521B325CB00AC4A6C /* scapekit-arsession */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25B1EFE421B325CB00AC4A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B1EFF421B325CC00AC4A6C /* LaunchScreen.storyboard in Resources */,
+				25B1EFF121B325CC00AC4A6C /* Assets.xcassets in Resources */,
+				25B1F00F21B3437600AC4A6C /* ScapeKitApiKeys.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D37E6E4291547408434989B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scapekit-arsession-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25B1EFE221B325CB00AC4A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B1EFEC21B325CB00AC4A6C /* ARViewController.swift in Sources */,
+				25B1EFEA21B325CB00AC4A6C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		25B1EFF221B325CC00AC4A6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25B1EFF321B325CC00AC4A6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25B1EFF621B325CC00AC4A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		25B1EFF721B325CC00AC4A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25B1EFF921B325CC00AC4A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8B28BF669E9517A9E8B26B /* Pods-scapekit-arsession.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZVCU3V37N;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pixscape-ios",
+					"$(PROJECT_DIR)/scapekit-arsession",
+				);
+				GCC_OPTIMIZATION_LEVEL = 3;
+				INFOPLIST_FILE = "$(SRCROOT)/scapekit-arsession/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scape.scapekit-arsession";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25B1EFFA21B325CC00AC4A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F4D2DEC860F431E6EACEF32 /* Pods-scapekit-arsession.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZVCU3V37N;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/pixscape-ios",
+					"$(PROJECT_DIR)/scapekit-arsession",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/scapekit-arsession/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scape.scapekit-arsession";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25B1EFE121B325CB00AC4A6C /* Build configuration list for PBXProject "scapekit-arsession" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B1EFF621B325CC00AC4A6C /* Debug */,
+				25B1EFF721B325CC00AC4A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B1EFF821B325CC00AC4A6C /* Build configuration list for PBXNativeTarget "scapekit-arsession" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B1EFF921B325CC00AC4A6C /* Debug */,
+				25B1EFFA21B325CC00AC4A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25B1EFDE21B325CB00AC4A6C /* Project object */;
+}
