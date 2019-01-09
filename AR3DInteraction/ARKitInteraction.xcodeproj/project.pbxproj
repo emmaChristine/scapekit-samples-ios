@@ -11,7 +11,6 @@
 		147062641F06FA790003EE03 /* VirtualObjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147062631F06FA790003EE03 /* VirtualObjectSelection.swift */; };
 		1488323F1EFC378A0043E0AB /* ViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488323E1EFC378A0043E0AB /* ViewController+Actions.swift */; };
 		148832411EFC3B250043E0AB /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148832401EFC3B250043E0AB /* FocusSquareSegment.swift */; };
-		2536AEA2216CB8090029A6F6 /* ScapeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2536AEA1216CB8090029A6F6 /* ScapeKit.framework */; };
 		2536AEA5216CB83F0029A6F6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2536AEA4216CB83F0029A6F6 /* libc++.tbd */; };
 		2536AEA7216CB8450029A6F6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2536AEA6216CB8450029A6F6 /* libz.tbd */; };
 		2585317521DD105D005BE480 /* ScapeKitApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2585317421DD105C005BE480 /* ScapeKitApiKeys.plist */; };
@@ -39,7 +38,6 @@
 		147D76491EFC36070000FEBF /* ViewController+ObjectSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ObjectSelection.swift"; sourceTree = "<group>"; };
 		1488323E1EFC378A0043E0AB /* ViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Actions.swift"; sourceTree = "<group>"; };
 		148832401EFC3B250043E0AB /* FocusSquareSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
-		2536AEA1216CB8090029A6F6 /* ScapeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScapeKit.framework; sourceTree = "<group>"; };
 		2536AEA4216CB83F0029A6F6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		2536AEA6216CB8450029A6F6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		2572F8AD21876CE3007729C0 /* libjpec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpec.a; path = "../scapekit/build_ios/ScapeKit/Build/Products/Debug-iphoneos/libjpec.a"; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			files = (
 				2536AEA7216CB8450029A6F6 /* libz.tbd in Frameworks */,
 				2536AEA5216CB83F0029A6F6 /* libc++.tbd in Frameworks */,
-				2536AEA2216CB8090029A6F6 /* ScapeKit.framework in Frameworks */,
 				5DD538662EF2CA98295B4D94 /* libPods-ARKitInteraction.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +172,6 @@
 				C8C2AC511F3A545C00E86BA3 /* VirtualObjectInteraction.swift */,
 				C812D8671F47628300344E73 /* ThresholdPanGesture.swift */,
 				C46356661EF9CC480080C8D9 /* VirtualObjectARView.swift */,
-				2536AEA1216CB8090029A6F6 /* ScapeKit.framework */,
 				C40DF57B1EC2330700D9D59E /* Virtual Objects */,
 				113B64D01ECA81CA0071CBD1 /* Focus Square */,
 				1488324B1EFC3EBF0043E0AB /* Additional View Controllers */,
