@@ -165,6 +165,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import ARKit;
 @import CoreGraphics;
+@import CoreLocation;
 @import CoreVideo;
 @import ObjectiveC;
 @import SceneKit;
@@ -188,6 +189,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+
 @class SCNScene;
 @class NSCoder;
 
@@ -203,28 +206,10 @@ SWIFT_CLASS("_TtC8ScapeKit9SCKArView")
 
 
 
-
-@interface SCKGeoOrientation (SWIFT_EXTENSION(ScapeKit))
-- (SCNQuaternion)toSNQuaternion SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)yaw SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)pitch SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)roll SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)toTrueGeoHeading SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class ARSession;
-@class ARFrame;
-
-@interface SCKGeoSession (SWIFT_EXTENSION(ScapeKit))
-- (void)setARSession:(ARSession * _Nonnull)arSession;
-- (void)setARFrame:(ARFrame * _Nonnull)arFrame;
-- (void)setCurrentPixelBuffer:(CVPixelBufferRef _Nonnull)pixelBuffer :(double)timestamp;
-@end
-
-
-
 @protocol SCKScapeClientBuilder;
 
+/// public
+/// The SCKScape class is the entry point to use ScapeKit.
 SWIFT_CLASS("_TtC8ScapeKit8SCKScape")
 @interface SCKScape : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -235,17 +220,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@protocol SCKMotionSession;
-@protocol SCKLocationSession;
+@class SCKScapeSession;
 @protocol SCKArSession;
 @protocol SCKScapeClientObserver;
 
+/// public
+/// The SCKScapeClient protocol is ScapeKit’s entry point.
+/// It provides access to the feature classes in the SDK: SCKScapeSession and SCKARSession.
 SWIFT_PROTOCOL("_TtP8ScapeKit14SCKScapeClient_")
 @protocol SCKScapeClient
 @property (nonatomic) BOOL isStarted;
-@property (nonatomic, readonly, strong) id <SCKMotionSession> _Nullable motionSession;
-@property (nonatomic, readonly, strong) id <SCKLocationSession> _Nullable locationSession;
-@property (nonatomic, readonly, strong) SCKGeoSession * _Nullable geoSession;
+@property (nonatomic, readonly, strong) SCKScapeSession * _Nullable scapeSession;
 @property (nonatomic, readonly, strong) id <SCKArSession> _Nullable arSession;
 @property (nonatomic, weak) id <SCKScapeClientObserver> _Nullable scapeClientObserver;
 - (void)start;
@@ -257,21 +242,71 @@ SWIFT_PROTOCOL("_TtP8ScapeKit14SCKScapeClient_")
 @end
 
 
+/// public
+/// The SCKScapeClientBuilder protocol builds a new SCKScapeClient instance.
+/// To construct a SCKScapeClient, the required configuration parameters are:
+/// <ul>
+///   <li>
+///     Application Key
+///     It is optional to specify:
+///   </li>
+///   <li>
+///     Debug Support (for console logs and visual logs)
+///   </li>
+///   <li>
+///     AR Support (for using the simple SCKArSession wrapper built on top of ARKit)
+///   </li>
+///   <li>
+///     Legacy Maps (for using the legacy maps in the area you are trying to use ScapeKit)
+///   </li>
+/// </ul>
 SWIFT_PROTOCOL("_TtP8ScapeKit21SCKScapeClientBuilder_")
 @protocol SCKScapeClientBuilder
 - (id <SCKScapeClientBuilder> _Nonnull)withApiKey:(NSString * _Nonnull)apiKey SWIFT_WARN_UNUSED_RESULT;
 - (id <SCKScapeClientBuilder> _Nonnull)withDebugSupport:(BOOL)isSupported SWIFT_WARN_UNUSED_RESULT;
 - (id <SCKScapeClientBuilder> _Nonnull)withArSupport:(BOOL)isSupported SWIFT_WARN_UNUSED_RESULT;
+- (id <SCKScapeClientBuilder> _Nonnull)withLegacyMapsSupport:(BOOL)isSupported SWIFT_WARN_UNUSED_RESULT;
+/// public
+/// Creates the resulting SCKScapeClient.
 - (id <SCKScapeClient> _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
+/// public
+/// A SCKScapeClientObserver handles client state changes
 SWIFT_PROTOCOL("_TtP8ScapeKit22SCKScapeClientObserver_")
 @protocol SCKScapeClientObserver
 - (void)onClientStarted:(id <SCKScapeClient> _Nonnull)scapeClient;
 - (void)onClientStopped:(id <SCKScapeClient> _Nonnull)scapeClient;
 - (void)onClientFailed:(id <SCKScapeClient> _Nonnull)scapeClient errorMessage:(NSString * _Nonnull)errorMessage;
 @end
+
+
+@interface SCKScapeOrientation (SWIFT_EXTENSION(ScapeKit))
+/// public
+/// Convert ScapeKit orientation to an actual SceneKit Quaternion
+- (SCNQuaternion)toSNQuaternion SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)yaw SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)pitch SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)roll SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
+@class ARFrame;
+
+@interface SCKScapeSession (SWIFT_EXTENSION(ScapeKit))
+/// public
+/// Set the ar frame manually (when SCKArSession is not used)
+- (void)setARFrame:(ARFrame * _Nonnull)arFrame;
+/// public
+/// Set the raw pixel buffer manually (when SCKArSession is not used)
+- (void)setCurrentPixelBuffer:(CVPixelBufferRef _Nonnull)pixelBuffer :(double)timestamp;
+@end
+
+
+
+
 
 
 

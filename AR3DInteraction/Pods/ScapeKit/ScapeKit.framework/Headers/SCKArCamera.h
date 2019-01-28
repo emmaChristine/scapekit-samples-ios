@@ -5,7 +5,7 @@
 #import "SCKArTrackingState.h"
 #import <Foundation/Foundation.h>
 
-/** public data object */
+/** public */
 @interface SCKArCamera : NSObject
 - (nonnull instancetype)initWithTransform:(nonnull NSArray<NSNumber *> *)transform
                                viewMatrix:(nonnull NSArray<NSNumber *> *)viewMatrix

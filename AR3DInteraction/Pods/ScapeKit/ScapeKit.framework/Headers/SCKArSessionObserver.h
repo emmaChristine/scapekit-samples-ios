@@ -8,7 +8,7 @@
 @protocol SCKArSession;
 
 
-/** public interface */
+/** public */
 @protocol SCKArSessionObserver
 
 - (void)onPlaneDetected:(nullable id<SCKArSession>)session

@@ -3,7 +3,7 @@
 
 #import <Foundation/Foundation.h>
 
-/** public data object */
+/** public */
 typedef NS_ENUM(NSInteger, SCKArTrackingState)
 {
     SCKArTrackingStatePaused,

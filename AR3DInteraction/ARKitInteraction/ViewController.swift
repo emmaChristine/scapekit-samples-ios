@@ -22,8 +22,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var spinner: UIActivityIndicatorView!
 
-    // MARK: ScapeKit GeoSession
-    var geoSession: SCKGeoSession?
+    // MARK: ScapeKit ScapeSession
+    var scapeSession: SCKScapeSession?
+    
+    lazy var scapeButton: UIButton = {
+        let button = UIButton(frame: CGRect(x: self.view.bounds.width/2 - 50,
+                                            y: self.view.bounds.height - 120,
+                                            width: 100,
+                                            height: 50))
+        button.backgroundColor = .green
+        button.setTitle("Scape It", for: .normal)
+        button.addTarget(self, action: #selector(localizeWithSensorsAndVisionEngine), for: .touchUpInside)
+        return button
+    }()
     
     // MARK: - UI Elements
     
@@ -69,7 +80,9 @@ class ViewController: UIViewController {
         sceneView.delegate = self
         sceneView.session.delegate = self
 
-        // Set up ScapeKit GeoSession
+        sceneView.addSubview(scapeButton)
+        
+        // Set up ScapeKit ScapeSession
         setupGeo()
         
         // Set up scene content.
@@ -108,9 +121,16 @@ class ViewController: UIViewController {
     // MARK: - Scene content setup
 
     private func setupGeo() {
-        geoSession = AppDelegate.scapeClient.geoSession
-        geoSession?.setARSession(arSession: session)
-        geoSession?.setGeoSessionObserver(self)
+        scapeSession = AppDelegate.scapeClient.scapeSession
+        scapeSession?.setARSession(arSession: session)
+        scapeSession?.setScapeSessionObserver(self)
+    }
+    
+    /**
+     * Get a GeoPose using raw sensors and Scape Vision Engine
+     */
+    @objc func localizeWithSensorsAndVisionEngine(sender: UIButton!) {
+        scapeSession?.getCurrentGeoPose(.rawSensorsAndScapeVisionEngine)
     }
     
     func setupCamera() {

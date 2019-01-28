@@ -18,7 +18,6 @@
 #import <ARKit/ARKit.h>
 #import <SceneKit/SceneKit.h>
 
-// public
 #import "SCKArSession.h"
 #import "SCKArSessionObserver.h"
 #import "SCKArFrame.h"
@@ -33,24 +32,17 @@
 #import "SCKArEulerAngles.h"
 #import "SCKArPointCloud.h"
 
-// public
-#import "SCKConfig.h"
-#import "SCKGeoSession.h"
-#import "SCKGeoSessionObserver.h"
-#import "SCKGeoSessionDetails.h"
-#import "SCKGeoState.h"
-#import "SCKGeoCoordinates.h"
-#import "SCKGeoOrientation.h"
-#import "SCKLocationSession.h"
-#import "SCKLocationSessionObserver.h"
-#import "SCKLocationSessionDetails.h"
-#import "SCKLocationCoordinates.h"
-#import "SCKMotionSession.h"
-#import "SCKMotionSessionObserver.h"
-#import "SCKMotionSessionDetails.h"
-#import "SCKVideoFrame.h"
+#import "SCKScapeSession.h"
+#import "SCKScapeSessionObserver.h"
+#import "SCKScapeSessionDetails.h"
+#import "SCKScapeSessionState.h"
+#import "SCKScapeOrientation.h"
 
-// private on Native iOS, public on Unity iOS
+#import "SCKCoordinates.h"
+#import "SCKGeoPose.h"
+
 #import "SCKLog.h"
 
-// private
+#import "SCKVideoFrame.h"
+
+#import "ScapeKit-Private.h"

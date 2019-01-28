@@ -7,7 +7,11 @@
 @protocol SCKArSessionObserver;
 
 
-/** public interface */
+/**
+ * public
+ * Simple abstraction layer sitting on top of ARKit/ARCore: 
+ * allows using AR related features (camera pose, plane detection, world alignment) easily
+ */
 @protocol SCKArSession
 
 /** public */

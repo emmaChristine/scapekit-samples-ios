@@ -11,23 +11,27 @@ import ScapeKit
 
 final class ARViewController: UIViewController {
 
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
+    }
+    
     lazy var arView: SCKArView = {
         return SCKArView()
     }()
     
-    lazy var geoButton: UIButton = {
+    lazy var scapeButton: UIButton = {
         let button = UIButton(frame: CGRect(x: self.view.bounds.width/2 - 50,
                                             y: self.view.bounds.height - 50,
                                             width: 100,
                                             height: 50))
         button.backgroundColor = .green
         button.setTitle("Localize", for: .normal)
-        button.addTarget(self, action: #selector(localize), for: .touchUpInside)
+        button.addTarget(self, action: #selector(localizeWithSensorsAndVisionEngine), for: .touchUpInside)
         return button
     }()
     
     private var arSession: SCKArSession?
-    private var geoSession: SCKGeoSession?
+    private var scapeSession: SCKScapeSession?
     private var scapeClient: SCKScapeClient
     
     init(scapeClient: SCKScapeClient) {
@@ -49,10 +53,10 @@ final class ARViewController: UIViewController {
                                                object: nil)
         
         self.view.addSubview(arView)
-        self.view.addSubview(geoButton)
+        self.view.addSubview(scapeButton)
         
         setupAr()
-        setupGeo()
+        setupScape()
     }
     
     override func viewWillLayoutSubviews() {
@@ -67,49 +71,79 @@ final class ARViewController: UIViewController {
         arSession?.resetTracking()
     }
     
-    func setupGeo() {
-        geoSession = scapeClient.geoSession
-        geoSession?.setGeoSessionObserver(self)
+    func setupScape() {
+        scapeSession = scapeClient.scapeSession
     }
     
     @objc func didBecomeActive() {
         arSession?.resetTracking()
     }
     
-    @objc func localize(sender: UIButton!) {
-        geoSession?.getCurrentGeoPositionAsync()
+    /**
+     * Get a GeoPose using raw sensors only
+     */
+    @objc func localizeWithRawSensors(sender: UIButton!) {
+        scapeSession?.getCurrentGeoPose(usageType: .rawSensors,
+                                        geoPoseEstimated: { [weak self] details in
+                                            guard let `self` = self else {
+                                                return
+                                            }
+                                            self.onGeoPoseEstimated(details: details)
+                                            
+            },
+                                        sessionError: { [weak self] details in
+                                            guard let `self` = self else {
+                                                return
+                                            }
+                                            self.onScapeSessionError(details: details)
+        })
+    }
+
+    
+    /**
+     * Get a GeoPose using raw sensors and Scape Vision Engine
+     */
+    @objc func localizeWithSensorsAndVisionEngine(sender: UIButton!) {
+        scapeSession?.getCurrentGeoPose(usageType: .rawSensorsAndScapeVisionEngine,
+                                        geoPoseEstimated: { [weak self] details in
+                                            guard let `self` = self else {
+                                                return
+                                            }
+                                            self.onGeoPoseEstimated(details: details)
+                                            
+        },
+                                        sessionError: { [weak self] details in
+                                            guard let `self` = self else {
+                                                return
+                                            }
+                                            self.onScapeSessionError(details: details)
+        })
     }
 }
 
-extension ARViewController: SCKGeoSessionObserver {
-    func onGeoSessionStarted(_ session: SCKGeoSession?, details: SCKGeoSessionDetails) {
+private extension ARViewController {
+    func onScapeSessionStarted(details: SCKScapeSessionDetails) {
         
     }
     
-    func onGeoSessionClosed(_ session: SCKGeoSession?, details: SCKGeoSessionDetails) {
+    func onScapeSessionClosed(details: SCKScapeSessionDetails) {
         
     }
     
-    func onGeoSessionError(_ session: SCKGeoSession?, details: SCKGeoSessionDetails) {
-        print("Could not retrieve geo coordinates: \(details.errorMessage)")
+    func onScapeSessionError(details: SCKScapeSessionDetails) {
+        print("Could not retrieve scape coordinates: \(details.errorMessage)")
         
     }
     
-    func onGeoPositionRawEstimated(_ session: SCKGeoSession?, details: SCKGeoSessionDetails) {
-        let coordinates = "\(details.rawLocation.coordinates.latitude) \(details.rawLocation.coordinates.longitude) \(details.rawLocation.coordinates.altitude) "
-        print("Retrieving partial GeoCoordinates: \(coordinates)")
-        
-        DispatchQueue.main.async {
-            self.geoButton.backgroundColor = .blue
-        }
-    }
-    
-    func onGeoPositionLocked(_ session: SCKGeoSession?, details: SCKGeoSessionDetails) {
-        let coordinates = "\(details.lockedCoordinates.latitude) \(details.lockedCoordinates.longitude) \(details.lockedCoordinates.altitude) "
-        print("Retrieving final GeoCoordinates: \(coordinates)")
-        
-        DispatchQueue.main.async {
-            self.geoButton.backgroundColor = .green
+    func onGeoPoseEstimated(details: SCKScapeSessionDetails) {
+        let gpsCoordinates = "\(details.geoPose.gpsCoordinates.latitude) \(details.geoPose.gpsCoordinates.longitude) "
+        print("Retrieving final GpsCoordinates: \(gpsCoordinates)")
+
+        // check if we got a successful result from Scape Vision Engine as we could have only got
+        // gps coordinates coming back from the raw sensors
+        if(details.currentState == .scapeLocalizationSuccess) {
+            let scapeCoordinates = "\(details.geoPose.scapeCoordinates?.latitude ?? 0.0) \(details.geoPose.scapeCoordinates?.longitude ?? 0.0) \(details.geoPose.scapeRawHeightEstimate ?? 0.0) "
+            print("Retrieving final ScapeCoordinates and height estimate: \(scapeCoordinates)")
         }
     }
 }

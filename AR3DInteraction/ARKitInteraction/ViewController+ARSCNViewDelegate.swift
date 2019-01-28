@@ -8,27 +8,22 @@ ARSCNViewDelegate interactions for `ViewController`.
 import ARKit
 import ScapeKit
 
-extension ViewController: SCKGeoSessionObserver {
-    func onGeoSessionError(_ session: SCKGeoSession?, details: SCKGeoSessionDetails) {
-        //print("Cannot retrieve final GeoCoordinates: \(details.errorMessage)")
+extension ViewController: SCKScapeSessionObserver {
+    func onScapeSessionError(_ session: SCKScapeSession?, details: SCKScapeSessionDetails) {
+        print("Cannot retrieve GeoPose: \(details.errorMessage)")
     }
     
-    func onGeoPositionLocked(_ session: SCKGeoSession?, details: SCKGeoSessionDetails) {
-        let coordinates = "\(details.lockedCoordinates.latitude) \(details.lockedCoordinates.longitude)"
-        print("Retrieving locked GeoCoordinates: \(coordinates)")
+    func onGeoPoseEstimated(_ session: SCKScapeSession?, details: SCKScapeSessionDetails) {
+        let coordinates = "\(details.geoPose.scapeCoordinates?.latitude ?? 0.0) \(details.geoPose.scapeCoordinates?.longitude ?? 0.0)"
+        print("Retrieving ScapeCoordinates: \(coordinates)")
     }
     
-    func onGeoSessionStarted(_ session: SCKGeoSession?, details: SCKGeoSessionDetails) {
+    func onScapeSessionStarted(_ session: SCKScapeSession?, details: SCKScapeSessionDetails) {
         
     }
     
-    func onGeoSessionClosed(_ session: SCKGeoSession?, details: SCKGeoSessionDetails) {
+    func onScapeSessionClosed(_ session: SCKScapeSession?, details: SCKScapeSessionDetails) {
         
-    }
-    
-    func onGeoPositionRawEstimated(_ session: SCKGeoSession?, details: SCKGeoSessionDetails) {
-        let coordinates = "\(details.rawLocation.coordinates.altitude) \(details.rawLocation.coordinates.latitude) \(details.rawLocation.coordinates.longitude)"
-        print("Retrieving raw LocationCoordinates: \(coordinates) with inliers: \(details.inliersCount)")
     }
 }
 
@@ -37,11 +32,6 @@ extension ViewController: ARSCNViewDelegate, ARSessionDelegate {
     // MARK: - ARSCNViewDelegate
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
-        
-        if let frame = session.currentFrame {
-//            geoSession!.setARFrame(arFrame: frame)
-            geoSession!.getCurrentGeoPositionAsync()
-        }
         
         let isAnyObjectInView = virtualObjectLoader.loadedObjects.contains { object in
             return sceneView.isNode(object, insideFrustumOf: sceneView.pointOfView!)

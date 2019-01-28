@@ -6,59 +6,76 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		7455C211D960CA86FC457BE177705E13 /* ScapeKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9F3209D7F38F402C5DD6FC294A30E747 /* Build configuration list for PBXAggregateTarget "ScapeKit" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = ScapeKit;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		7883A179642F3461E263DF1390C5DDB6 /* Pods-ARKitInteraction-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4EE30D58876E1E3E46CDE7318EF31D /* Pods-ARKitInteraction-dummy.m */; };
+		501B796D12D272C565A1C020EB64B8B0 /* Pods-ARKitInteraction-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2203CB82BD55A6DFDCF070EEC77C351 /* Pods-ARKitInteraction-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EA5F377E8318ABF4AFFE4FFFD2FFB549 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7455C211D960CA86FC457BE177705E13;
+			remoteInfo = ScapeKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		066790E7F0A135FA481D4FD5EE4FEE6C /* SCKArPlane.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArPlane.h; path = ScapeKit.framework/Headers/SCKArPlane.h; sourceTree = "<group>"; };
-		072B1E443C7F0E2EB80E340AFF74368B /* ScapeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ScapeKit.h; path = ScapeKit.framework/Headers/ScapeKit.h; sourceTree = "<group>"; };
-		09FC220BC9C8CB776515D1C6B131A83C /* Pods-ARKitInteraction-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARKitInteraction-acknowledgements.plist"; sourceTree = "<group>"; };
-		118D0ACF114BCDA908AE6D6FD3978805 /* SCKArTrackingState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArTrackingState.h; path = ScapeKit.framework/Headers/SCKArTrackingState.h; sourceTree = "<group>"; };
-		135ED2C4433FFB88A4C794236D949CD6 /* ScapeKit-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ScapeKit-Swift.h"; path = "ScapeKit.framework/Headers/ScapeKit-Swift.h"; sourceTree = "<group>"; };
-		13963A3E83351A4694B9665712EE7FA0 /* SCKConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKConfig.h; path = ScapeKit.framework/Headers/SCKConfig.h; sourceTree = "<group>"; };
-		1C0B720069E91136F9CFCCBD7D2020FF /* SCKGeoOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKGeoOrientation.h; path = ScapeKit.framework/Headers/SCKGeoOrientation.h; sourceTree = "<group>"; };
-		274A0D8644E6F7C38AE42312CD47382A /* ScapeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScapeKit.framework; sourceTree = "<group>"; };
-		399E0CAE872EBF9662F837B55DAA635C /* Pods-ARKitInteraction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARKitInteraction.release.xcconfig"; sourceTree = "<group>"; };
-		3AC48B9D7BC4F81D6D7F78717FD0A20E /* SCKMotionSessionDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKMotionSessionDetails.h; path = ScapeKit.framework/Headers/SCKMotionSessionDetails.h; sourceTree = "<group>"; };
-		3E4EE30D58876E1E3E46CDE7318EF31D /* Pods-ARKitInteraction-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARKitInteraction-dummy.m"; sourceTree = "<group>"; };
-		444A3C9990C8A2A5AB238868ADE6D547 /* SCKArAlignment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArAlignment.h; path = ScapeKit.framework/Headers/SCKArAlignment.h; sourceTree = "<group>"; };
-		4A93257018761002E6E50031E8942A40 /* Pods-ARKitInteraction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARKitInteraction.debug.xcconfig"; sourceTree = "<group>"; };
-		4DFB42B63CC0855AD98011EDCFF50955 /* Pods-ARKitInteraction-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARKitInteraction-resources.sh"; sourceTree = "<group>"; };
-		591F6F621A26F780DF9C942DAA709AB7 /* SCKArNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArNode.h; path = ScapeKit.framework/Headers/SCKArNode.h; sourceTree = "<group>"; };
-		5A840E5E46D1658E2F876415F75C8D9A /* SCKLocationSessionObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKLocationSessionObserver.h; path = ScapeKit.framework/Headers/SCKLocationSessionObserver.h; sourceTree = "<group>"; };
-		63DBC413ACDEC4733ADC28A3F23C533C /* SCKArAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArAnchor.h; path = ScapeKit.framework/Headers/SCKArAnchor.h; sourceTree = "<group>"; };
-		6CC046656A87A3444C37C81436F15565 /* SCKArLight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArLight.h; path = ScapeKit.framework/Headers/SCKArLight.h; sourceTree = "<group>"; };
-		7DF05407D2ADDFB48B0C0EFB6201A4A5 /* SCKMotionSessionObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKMotionSessionObserver.h; path = ScapeKit.framework/Headers/SCKMotionSessionObserver.h; sourceTree = "<group>"; };
-		801498CD2938FC4445F83AD3A8453859 /* SCKArSessionObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArSessionObserver.h; path = ScapeKit.framework/Headers/SCKArSessionObserver.h; sourceTree = "<group>"; };
-		82DCC2E09AE2A3219D3126A04A0A31D7 /* SCKArWorldAlignment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArWorldAlignment.h; path = ScapeKit.framework/Headers/SCKArWorldAlignment.h; sourceTree = "<group>"; };
-		892B21195E17EBEEEEFCF240D419627A /* SCKGeoState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKGeoState.h; path = ScapeKit.framework/Headers/SCKGeoState.h; sourceTree = "<group>"; };
-		8AB328A131874CC21BAD558859AA834D /* SCKGeoSessionObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKGeoSessionObserver.h; path = ScapeKit.framework/Headers/SCKGeoSessionObserver.h; sourceTree = "<group>"; };
-		8BF4FDD3E78815560A14BFE99119DE28 /* SCKArPointCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArPointCloud.h; path = ScapeKit.framework/Headers/SCKArPointCloud.h; sourceTree = "<group>"; };
-		8C804085B253D83B67C8BF357CBDB6DB /* SCKLocationSessionDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKLocationSessionDetails.h; path = ScapeKit.framework/Headers/SCKLocationSessionDetails.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94DFE8302A944B877CDBFD0ED1447638 /* SCKArFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArFrame.h; path = ScapeKit.framework/Headers/SCKArFrame.h; sourceTree = "<group>"; };
-		9E5AB8B65D0932CE7E3AA80F15E251C1 /* Pods-ARKitInteraction-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARKitInteraction-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A25FA9704631F0C45E2A65F5E6D0AD69 /* SCKLocationSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKLocationSession.h; path = ScapeKit.framework/Headers/SCKLocationSession.h; sourceTree = "<group>"; };
-		A40257BA4783827EBABEA0945F67CBFC /* DefaultVideoFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DefaultVideoFrame.h; path = ScapeKit.framework/Headers/DefaultVideoFrame.h; sourceTree = "<group>"; };
-		AE04EDC00B4751226F67AECF4A08F86E /* SCKVideoFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKVideoFrame.h; path = ScapeKit.framework/Headers/SCKVideoFrame.h; sourceTree = "<group>"; };
-		B496DAD80438258A5BCAAE2F3BD831E4 /* SCKArEulerAngles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArEulerAngles.h; path = ScapeKit.framework/Headers/SCKArEulerAngles.h; sourceTree = "<group>"; };
-		B7E014E607A01F40FA2A3276BDCFD30A /* SCKMotionSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKMotionSession.h; path = ScapeKit.framework/Headers/SCKMotionSession.h; sourceTree = "<group>"; };
-		BE88A3E63FBE857AB34C472FD8523BF2 /* SCKArCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArCenter.h; path = ScapeKit.framework/Headers/SCKArCenter.h; sourceTree = "<group>"; };
-		C53F1B5301D3C4BE44AF1626B6ECC486 /* libPods-ARKitInteraction.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ARKitInteraction.a"; path = "libPods-ARKitInteraction.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBCD936A3330082C001708FE4FEE2AF9 /* SCKArExtent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArExtent.h; path = ScapeKit.framework/Headers/SCKArExtent.h; sourceTree = "<group>"; };
-		CCE0D78429086B75B23301746BA76BCC /* SCKLocationCoordinates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKLocationCoordinates.h; path = ScapeKit.framework/Headers/SCKLocationCoordinates.h; sourceTree = "<group>"; };
-		DA65458BAD3BC1983DB901CDBBCAE20E /* SCKGeoCoordinates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKGeoCoordinates.h; path = ScapeKit.framework/Headers/SCKGeoCoordinates.h; sourceTree = "<group>"; };
-		E1431E5F6FB8583F4F5B9CBF1810A9E5 /* SCKArCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArCamera.h; path = ScapeKit.framework/Headers/SCKArCamera.h; sourceTree = "<group>"; };
-		E84F23AC9B58371B46AEE54C29F95D31 /* Pods-ARKitInteraction-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARKitInteraction-frameworks.sh"; sourceTree = "<group>"; };
-		EDA3CAF91C028DA25F7EB9D6B767EAE5 /* SCKLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKLog.h; path = ScapeKit.framework/Headers/SCKLog.h; sourceTree = "<group>"; };
-		EE8F7FEB4EFCD3C78CD1AF8BE55C5DA3 /* SCKGeoSessionDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKGeoSessionDetails.h; path = ScapeKit.framework/Headers/SCKGeoSessionDetails.h; sourceTree = "<group>"; };
-		FCDD3B7814ABC1E44534F577D177676C /* SCKGeoSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKGeoSession.h; path = ScapeKit.framework/Headers/SCKGeoSession.h; sourceTree = "<group>"; };
-		FEA9821E6D5D34795BA693FDF7898C9A /* SCKArSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArSession.h; path = ScapeKit.framework/Headers/SCKArSession.h; sourceTree = "<group>"; };
+		07D849A13280E8C9EAEEC26F0E339189 /* SCKExecutorService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKExecutorService.h; path = ScapeKit.framework/Headers/SCKExecutorService.h; sourceTree = "<group>"; };
+		1CDBC13FE1AD5E18F86FE5AFCE771512 /* ScapeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ScapeKit.h; path = ScapeKit.framework/Headers/ScapeKit.h; sourceTree = "<group>"; };
+		24D3B0BBA6915AEBA400724C00B6BB88 /* Pods-ARKitInteraction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARKitInteraction.release.xcconfig"; sourceTree = "<group>"; };
+		256BBE353FF79401326BEFAA1E59F19D /* ScapeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScapeKit.framework; sourceTree = "<group>"; };
+		2B2A7216B62779FF1069D8B2F5A5F24C /* SCKArNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArNode.h; path = ScapeKit.framework/Headers/SCKArNode.h; sourceTree = "<group>"; };
+		40E6F1A1293A21DBA5CEB898189841F6 /* SCKArEulerAngles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArEulerAngles.h; path = ScapeKit.framework/Headers/SCKArEulerAngles.h; sourceTree = "<group>"; };
+		45FBE0C74C93F206066743ECF7E410C9 /* SCKArWorldAlignment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArWorldAlignment.h; path = ScapeKit.framework/Headers/SCKArWorldAlignment.h; sourceTree = "<group>"; };
+		47B211CA3D21ADB6418F87D3B27E750C /* SCKArAlignment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArAlignment.h; path = ScapeKit.framework/Headers/SCKArAlignment.h; sourceTree = "<group>"; };
+		5BEBF904ACFA23ABEC70FAE8776CD218 /* SCKArExtent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArExtent.h; path = ScapeKit.framework/Headers/SCKArExtent.h; sourceTree = "<group>"; };
+		5E3B7406A0A36EC4E84C5000920096D7 /* SCKGeoSourceType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKGeoSourceType.h; path = ScapeKit.framework/Headers/SCKGeoSourceType.h; sourceTree = "<group>"; };
+		6CBEAF57E4A19EBDA389D1C3B334B45E /* Pods-ARKitInteraction-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARKitInteraction-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D2E728E0AF3BE4CD4F5300C7A2F0CEE /* SCKArPointCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArPointCloud.h; path = ScapeKit.framework/Headers/SCKArPointCloud.h; sourceTree = "<group>"; };
+		796561935E925B258DE228744E8E61B6 /* SCKArFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArFrame.h; path = ScapeKit.framework/Headers/SCKArFrame.h; sourceTree = "<group>"; };
+		79D8625507C190D530B1817DF3BA9866 /* SCKScapeSessionDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeSessionDetails.h; path = ScapeKit.framework/Headers/SCKScapeSessionDetails.h; sourceTree = "<group>"; };
+		7A2D66293E30DEDC76F6A5A3240C52E3 /* SCKGeoPose.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKGeoPose.h; path = ScapeKit.framework/Headers/SCKGeoPose.h; sourceTree = "<group>"; };
+		801FC95AB7B4BD04ED47821221D7BBB1 /* SCKArCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArCamera.h; path = ScapeKit.framework/Headers/SCKArCamera.h; sourceTree = "<group>"; };
+		8279393B79C2D33D2A4D2F312A67C78C /* SCKArCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArCenter.h; path = ScapeKit.framework/Headers/SCKArCenter.h; sourceTree = "<group>"; };
+		8802EB505795784668638C9D8848B99E /* ScapeKit-Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ScapeKit-Private.h"; path = "ScapeKit.framework/Headers/ScapeKit-Private.h"; sourceTree = "<group>"; };
+		9399B090F63A004C4381B4330EBA85A4 /* SCKVideoFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKVideoFrame.h; path = ScapeKit.framework/Headers/SCKVideoFrame.h; sourceTree = "<group>"; };
+		98C948C3B1168A06584EA01EB3674AB5 /* SCKLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKLog.h; path = ScapeKit.framework/Headers/SCKLog.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DAFD7B82108F4F03458B1ADC8C0F53E /* SCKScapeSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeSession.h; path = ScapeKit.framework/Headers/SCKScapeSession.h; sourceTree = "<group>"; };
+		AA9D78D0573850A6E9E3E98D8B16F9E4 /* SCKArLight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArLight.h; path = ScapeKit.framework/Headers/SCKArLight.h; sourceTree = "<group>"; };
+		AC594277ED36BBA1AC7654A5C7FD6E61 /* ScapeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScapeKit.xcconfig; sourceTree = "<group>"; };
+		AC5EE027AA2E313B69EAD444F006FEEA /* SCKArPlane.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArPlane.h; path = ScapeKit.framework/Headers/SCKArPlane.h; sourceTree = "<group>"; };
+		AF21D21998B0F8BFC993F2B6D6A89D40 /* libPods-ARKitInteraction.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ARKitInteraction.a"; path = "libPods-ARKitInteraction.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06CFA524D2F526015A686DA909AC559 /* SCKArSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArSession.h; path = ScapeKit.framework/Headers/SCKArSession.h; sourceTree = "<group>"; };
+		B4481D896D22E380995EB75F5A8BBCF1 /* Pods-ARKitInteraction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARKitInteraction.debug.xcconfig"; sourceTree = "<group>"; };
+		B81C642C9190DF8A2E5D4C17F8A82D05 /* SCKArAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArAnchor.h; path = ScapeKit.framework/Headers/SCKArAnchor.h; sourceTree = "<group>"; };
+		BD26A88AF2C0BADA5F940CEAA7BD9CD3 /* SCKFileInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKFileInfo.h; path = ScapeKit.framework/Headers/SCKFileInfo.h; sourceTree = "<group>"; };
+		C18BDC6D3F3811095580BBE22CA3FD51 /* SCKArSessionObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArSessionObserver.h; path = ScapeKit.framework/Headers/SCKArSessionObserver.h; sourceTree = "<group>"; };
+		D2203CB82BD55A6DFDCF070EEC77C351 /* Pods-ARKitInteraction-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARKitInteraction-dummy.m"; sourceTree = "<group>"; };
+		D3F21B3C79FB94DA4B90276C26B3A135 /* SCKScapeOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeOrientation.h; path = ScapeKit.framework/Headers/SCKScapeOrientation.h; sourceTree = "<group>"; };
+		D6BDF2F3F13FA9DE920CE1A0C6C82942 /* SCKArTrackingState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArTrackingState.h; path = ScapeKit.framework/Headers/SCKArTrackingState.h; sourceTree = "<group>"; };
+		DBC7379DE01C5A3ABA96917FF8BA191F /* SCKCoordinates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKCoordinates.h; path = ScapeKit.framework/Headers/SCKCoordinates.h; sourceTree = "<group>"; };
+		DC8075CDF237D59F9501A5347CEF7FA8 /* SCKScapeSessionObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeSessionObserver.h; path = ScapeKit.framework/Headers/SCKScapeSessionObserver.h; sourceTree = "<group>"; };
+		DD9A9772003D2EE1F0AB4581D213BF6F /* Pods-ARKitInteraction-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARKitInteraction-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EA8831256C00A4A22112342C56BFDEFE /* ScapeKit-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ScapeKit-Swift.h"; path = "ScapeKit.framework/Headers/ScapeKit-Swift.h"; sourceTree = "<group>"; };
+		F762B5D5C9978D4D0E0BAE6DDB0CB53F /* SCKScapeSessionState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeSessionState.h; path = ScapeKit.framework/Headers/SCKScapeSessionState.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A739684B0A1B6458ABF350230C661569 /* Frameworks */ = {
+		85932688DB6CD4F5AE43C911E249D992 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,118 +85,122 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		553B29BFDD85EBE48F4F13CEECB3BEB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				256BBE353FF79401326BEFAA1E59F19D /* ScapeKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		35C3C5C0BD2BD4F35E0ECBA60E610C2D /* Targets Support Files */ = {
+		6ECE0DB1DAE93BDE8703AF229C34C579 /* Pods-ARKitInteraction */ = {
 			isa = PBXGroup;
 			children = (
-				CB505390336F43514EFE6703FA2A0C33 /* Pods-ARKitInteraction */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		410B999282086DCAD112332AB1000471 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C53F1B5301D3C4BE44AF1626B6ECC486 /* libPods-ARKitInteraction.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5EFE6EB0BFE5099904F774F8D8AFF883 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				778BCBDAD0A279606FC06CE1F125BE6B /* ScapeKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		747E2F4961C98E05B0117825E5CC245B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				274A0D8644E6F7C38AE42312CD47382A /* ScapeKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		778BCBDAD0A279606FC06CE1F125BE6B /* ScapeKit */ = {
-			isa = PBXGroup;
-			children = (
-				A40257BA4783827EBABEA0945F67CBFC /* DefaultVideoFrame.h */,
-				072B1E443C7F0E2EB80E340AFF74368B /* ScapeKit.h */,
-				135ED2C4433FFB88A4C794236D949CD6 /* ScapeKit-Swift.h */,
-				444A3C9990C8A2A5AB238868ADE6D547 /* SCKArAlignment.h */,
-				63DBC413ACDEC4733ADC28A3F23C533C /* SCKArAnchor.h */,
-				E1431E5F6FB8583F4F5B9CBF1810A9E5 /* SCKArCamera.h */,
-				BE88A3E63FBE857AB34C472FD8523BF2 /* SCKArCenter.h */,
-				B496DAD80438258A5BCAAE2F3BD831E4 /* SCKArEulerAngles.h */,
-				CBCD936A3330082C001708FE4FEE2AF9 /* SCKArExtent.h */,
-				94DFE8302A944B877CDBFD0ED1447638 /* SCKArFrame.h */,
-				6CC046656A87A3444C37C81436F15565 /* SCKArLight.h */,
-				591F6F621A26F780DF9C942DAA709AB7 /* SCKArNode.h */,
-				066790E7F0A135FA481D4FD5EE4FEE6C /* SCKArPlane.h */,
-				8BF4FDD3E78815560A14BFE99119DE28 /* SCKArPointCloud.h */,
-				FEA9821E6D5D34795BA693FDF7898C9A /* SCKArSession.h */,
-				801498CD2938FC4445F83AD3A8453859 /* SCKArSessionObserver.h */,
-				118D0ACF114BCDA908AE6D6FD3978805 /* SCKArTrackingState.h */,
-				82DCC2E09AE2A3219D3126A04A0A31D7 /* SCKArWorldAlignment.h */,
-				13963A3E83351A4694B9665712EE7FA0 /* SCKConfig.h */,
-				DA65458BAD3BC1983DB901CDBBCAE20E /* SCKGeoCoordinates.h */,
-				1C0B720069E91136F9CFCCBD7D2020FF /* SCKGeoOrientation.h */,
-				FCDD3B7814ABC1E44534F577D177676C /* SCKGeoSession.h */,
-				EE8F7FEB4EFCD3C78CD1AF8BE55C5DA3 /* SCKGeoSessionDetails.h */,
-				8AB328A131874CC21BAD558859AA834D /* SCKGeoSessionObserver.h */,
-				892B21195E17EBEEEEFCF240D419627A /* SCKGeoState.h */,
-				CCE0D78429086B75B23301746BA76BCC /* SCKLocationCoordinates.h */,
-				A25FA9704631F0C45E2A65F5E6D0AD69 /* SCKLocationSession.h */,
-				8C804085B253D83B67C8BF357CBDB6DB /* SCKLocationSessionDetails.h */,
-				5A840E5E46D1658E2F876415F75C8D9A /* SCKLocationSessionObserver.h */,
-				EDA3CAF91C028DA25F7EB9D6B767EAE5 /* SCKLog.h */,
-				B7E014E607A01F40FA2A3276BDCFD30A /* SCKMotionSession.h */,
-				3AC48B9D7BC4F81D6D7F78717FD0A20E /* SCKMotionSessionDetails.h */,
-				7DF05407D2ADDFB48B0C0EFB6201A4A5 /* SCKMotionSessionObserver.h */,
-				AE04EDC00B4751226F67AECF4A08F86E /* SCKVideoFrame.h */,
-				747E2F4961C98E05B0117825E5CC245B /* Frameworks */,
-			);
-			name = ScapeKit;
-			path = ScapeKit;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				5EFE6EB0BFE5099904F774F8D8AFF883 /* Pods */,
-				410B999282086DCAD112332AB1000471 /* Products */,
-				35C3C5C0BD2BD4F35E0ECBA60E610C2D /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		CB505390336F43514EFE6703FA2A0C33 /* Pods-ARKitInteraction */ = {
-			isa = PBXGroup;
-			children = (
-				9E5AB8B65D0932CE7E3AA80F15E251C1 /* Pods-ARKitInteraction-acknowledgements.markdown */,
-				09FC220BC9C8CB776515D1C6B131A83C /* Pods-ARKitInteraction-acknowledgements.plist */,
-				3E4EE30D58876E1E3E46CDE7318EF31D /* Pods-ARKitInteraction-dummy.m */,
-				E84F23AC9B58371B46AEE54C29F95D31 /* Pods-ARKitInteraction-frameworks.sh */,
-				4DFB42B63CC0855AD98011EDCFF50955 /* Pods-ARKitInteraction-resources.sh */,
-				4A93257018761002E6E50031E8942A40 /* Pods-ARKitInteraction.debug.xcconfig */,
-				399E0CAE872EBF9662F837B55DAA635C /* Pods-ARKitInteraction.release.xcconfig */,
+				DD9A9772003D2EE1F0AB4581D213BF6F /* Pods-ARKitInteraction-acknowledgements.markdown */,
+				6CBEAF57E4A19EBDA389D1C3B334B45E /* Pods-ARKitInteraction-acknowledgements.plist */,
+				D2203CB82BD55A6DFDCF070EEC77C351 /* Pods-ARKitInteraction-dummy.m */,
+				B4481D896D22E380995EB75F5A8BBCF1 /* Pods-ARKitInteraction.debug.xcconfig */,
+				24D3B0BBA6915AEBA400724C00B6BB88 /* Pods-ARKitInteraction.release.xcconfig */,
 			);
 			name = "Pods-ARKitInteraction";
 			path = "Target Support Files/Pods-ARKitInteraction";
 			sourceTree = "<group>";
 		};
+		7A57C33939EC8F105C32819D73CFEAA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F1262233C42C796A37B057B971E3EC8 /* ScapeKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7F1262233C42C796A37B057B971E3EC8 /* ScapeKit */ = {
+			isa = PBXGroup;
+			children = (
+				1CDBC13FE1AD5E18F86FE5AFCE771512 /* ScapeKit.h */,
+				8802EB505795784668638C9D8848B99E /* ScapeKit-Private.h */,
+				EA8831256C00A4A22112342C56BFDEFE /* ScapeKit-Swift.h */,
+				47B211CA3D21ADB6418F87D3B27E750C /* SCKArAlignment.h */,
+				B81C642C9190DF8A2E5D4C17F8A82D05 /* SCKArAnchor.h */,
+				801FC95AB7B4BD04ED47821221D7BBB1 /* SCKArCamera.h */,
+				8279393B79C2D33D2A4D2F312A67C78C /* SCKArCenter.h */,
+				40E6F1A1293A21DBA5CEB898189841F6 /* SCKArEulerAngles.h */,
+				5BEBF904ACFA23ABEC70FAE8776CD218 /* SCKArExtent.h */,
+				796561935E925B258DE228744E8E61B6 /* SCKArFrame.h */,
+				AA9D78D0573850A6E9E3E98D8B16F9E4 /* SCKArLight.h */,
+				2B2A7216B62779FF1069D8B2F5A5F24C /* SCKArNode.h */,
+				AC5EE027AA2E313B69EAD444F006FEEA /* SCKArPlane.h */,
+				6D2E728E0AF3BE4CD4F5300C7A2F0CEE /* SCKArPointCloud.h */,
+				B06CFA524D2F526015A686DA909AC559 /* SCKArSession.h */,
+				C18BDC6D3F3811095580BBE22CA3FD51 /* SCKArSessionObserver.h */,
+				D6BDF2F3F13FA9DE920CE1A0C6C82942 /* SCKArTrackingState.h */,
+				45FBE0C74C93F206066743ECF7E410C9 /* SCKArWorldAlignment.h */,
+				DBC7379DE01C5A3ABA96917FF8BA191F /* SCKCoordinates.h */,
+				07D849A13280E8C9EAEEC26F0E339189 /* SCKExecutorService.h */,
+				BD26A88AF2C0BADA5F940CEAA7BD9CD3 /* SCKFileInfo.h */,
+				7A2D66293E30DEDC76F6A5A3240C52E3 /* SCKGeoPose.h */,
+				5E3B7406A0A36EC4E84C5000920096D7 /* SCKGeoSourceType.h */,
+				98C948C3B1168A06584EA01EB3674AB5 /* SCKLog.h */,
+				D3F21B3C79FB94DA4B90276C26B3A135 /* SCKScapeOrientation.h */,
+				9DAFD7B82108F4F03458B1ADC8C0F53E /* SCKScapeSession.h */,
+				79D8625507C190D530B1817DF3BA9866 /* SCKScapeSessionDetails.h */,
+				DC8075CDF237D59F9501A5347CEF7FA8 /* SCKScapeSessionObserver.h */,
+				F762B5D5C9978D4D0E0BAE6DDB0CB53F /* SCKScapeSessionState.h */,
+				9399B090F63A004C4381B4330EBA85A4 /* SCKVideoFrame.h */,
+				553B29BFDD85EBE48F4F13CEECB3BEB1 /* Frameworks */,
+				E85FF72EF5F31C55507C2594A1FEA1E7 /* Support Files */,
+			);
+			name = ScapeKit;
+			path = ScapeKit;
+			sourceTree = "<group>";
+		};
+		8B5979E9168803EE06D58DA52A6E35D4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6ECE0DB1DAE93BDE8703AF229C34C579 /* Pods-ARKitInteraction */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AE6BCF2D541031CA0E220AC6D4A18050 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF21D21998B0F8BFC993F2B6D6A89D40 /* libPods-ARKitInteraction.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				7A57C33939EC8F105C32819D73CFEAA9 /* Pods */,
+				AE6BCF2D541031CA0E220AC6D4A18050 /* Products */,
+				8B5979E9168803EE06D58DA52A6E35D4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E85FF72EF5F31C55507C2594A1FEA1E7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC594277ED36BBA1AC7654A5C7FD6E61 /* ScapeKit.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ScapeKit";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2F37CEDBA6DA80AF15711958B148A048 /* Headers */ = {
+		C3B0E67E9F69B0C70ACBF01F4FCA48F5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,62 +210,73 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		41308AAC73E86F53E9F3ABCABD45DB73 /* Pods-ARKitInteraction */ = {
+		4FF204DCA5BAA27ABF962BDABBF25A64 /* Pods-ARKitInteraction */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B81BFA304AF3517111045C300CFB1442 /* Build configuration list for PBXNativeTarget "Pods-ARKitInteraction" */;
+			buildConfigurationList = 77A4302D8CBACE92E5733F5A0B7542C2 /* Build configuration list for PBXNativeTarget "Pods-ARKitInteraction" */;
 			buildPhases = (
-				2F37CEDBA6DA80AF15711958B148A048 /* Headers */,
-				997FE624630D892D16BB092DFDC69102 /* Sources */,
-				A739684B0A1B6458ABF350230C661569 /* Frameworks */,
+				C3B0E67E9F69B0C70ACBF01F4FCA48F5 /* Headers */,
+				664C3F70D1B25DECE546D0D4039751FE /* Sources */,
+				85932688DB6CD4F5AE43C911E249D992 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A26D4A5FA6EF2A6B02D8B69C73749BD2 /* PBXTargetDependency */,
 			);
 			name = "Pods-ARKitInteraction";
 			productName = "Pods-ARKitInteraction";
-			productReference = C53F1B5301D3C4BE44AF1626B6ECC486 /* libPods-ARKitInteraction.a */;
+			productReference = AF21D21998B0F8BFC993F2B6D6A89D40 /* libPods-ARKitInteraction.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 410B999282086DCAD112332AB1000471 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = AE6BCF2D541031CA0E220AC6D4A18050 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41308AAC73E86F53E9F3ABCABD45DB73 /* Pods-ARKitInteraction */,
+				4FF204DCA5BAA27ABF962BDABBF25A64 /* Pods-ARKitInteraction */,
+				7455C211D960CA86FC457BE177705E13 /* ScapeKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		997FE624630D892D16BB092DFDC69102 /* Sources */ = {
+		664C3F70D1B25DECE546D0D4039751FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7883A179642F3461E263DF1390C5DDB6 /* Pods-ARKitInteraction-dummy.m in Sources */,
+				501B796D12D272C565A1C020EB64B8B0 /* Pods-ARKitInteraction-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A26D4A5FA6EF2A6B02D8B69C73749BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScapeKit;
+			target = 7455C211D960CA86FC457BE177705E13 /* ScapeKit */;
+			targetProxy = EA5F377E8318ABF4AFFE4FFFD2FFB549 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		16BC524EDE752B9BB72D7E267116A89A /* Debug */ = {
+		041FD3B46A21D2A2FBB96B1A8F2A1466 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,8 +308,66 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		3D2C3A7F9CB0C7AD4FBEA3657F104047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -310,11 +400,66 @@
 			};
 			name = Debug;
 		};
-		1C27BAA294D4F864969E7FB73DEB5952 /* Release */ = {
+		83BCC45587372FC339AF789DA5D86E6F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 399E0CAE872EBF9662F837B55DAA635C /* Pods-ARKitInteraction.release.xcconfig */;
+			baseConfigurationReference = AC594277ED36BBA1AC7654A5C7FD6E61 /* ScapeKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		962C5BEB84C9EA5229FB02D16861407B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC594277ED36BBA1AC7654A5C7FD6E61 /* ScapeKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3F4B3ED504451011F25D4BF8F447553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4481D896D22E380995EB75F5A8BBCF1 /* Pods-ARKitInteraction.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB6AD2D3CE1F70BCA655EC7F4385EAAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24D3B0BBA6915AEBA400724C00B6BB88 /* Pods-ARKitInteraction.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -333,112 +478,37 @@
 			};
 			name = Release;
 		};
-		1DF68876DF2AD07A12482477C1AA7DB8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		E80B86CF2EE6A209A233C340E0C42F6A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A93257018761002E6E50031E8942A40 /* Pods-ARKitInteraction.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				16BC524EDE752B9BB72D7E267116A89A /* Debug */,
-				1DF68876DF2AD07A12482477C1AA7DB8 /* Release */,
+				3D2C3A7F9CB0C7AD4FBEA3657F104047 /* Debug */,
+				041FD3B46A21D2A2FBB96B1A8F2A1466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B81BFA304AF3517111045C300CFB1442 /* Build configuration list for PBXNativeTarget "Pods-ARKitInteraction" */ = {
+		77A4302D8CBACE92E5733F5A0B7542C2 /* Build configuration list for PBXNativeTarget "Pods-ARKitInteraction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E80B86CF2EE6A209A233C340E0C42F6A /* Debug */,
-				1C27BAA294D4F864969E7FB73DEB5952 /* Release */,
+				B3F4B3ED504451011F25D4BF8F447553 /* Debug */,
+				FB6AD2D3CE1F70BCA655EC7F4385EAAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F3209D7F38F402C5DD6FC294A30E747 /* Build configuration list for PBXAggregateTarget "ScapeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83BCC45587372FC339AF789DA5D86E6F /* Debug */,
+				962C5BEB84C9EA5229FB02D16861407B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
