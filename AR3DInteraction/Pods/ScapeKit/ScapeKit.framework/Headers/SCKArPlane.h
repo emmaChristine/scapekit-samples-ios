@@ -7,7 +7,7 @@
 #import "SCKArNode.h"
 #import <Foundation/Foundation.h>
 
-/** public data object */
+/** public */
 @interface SCKArPlane : NSObject
 - (nonnull instancetype)initWithId:(nonnull NSString *)id
                          alignment:(SCKArAlignment)alignment

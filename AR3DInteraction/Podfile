@@ -1,6 +1,6 @@
 platform :ios, '11.4'
 
 target 'ARKitInteraction' do
-  # Pods for scapekit-arsession
-  pod 'ScapeKit'
+  # Pods for ARKitInteraction
+  pod 'ScapeKit', '~> 0.2.0'
 end

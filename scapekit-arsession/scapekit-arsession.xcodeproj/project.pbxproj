@@ -344,7 +344,7 @@
 		};
 		25B1EFF921B325CC00AC4A6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E8B28BF669E9517A9E8B26B /* Pods-scapekit-arsession.debug.xcconfig */;
+			baseConfigurationReference = 263A79272FA46EDDBC3ACF27 /* Pods-scapekit-arsession.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -371,7 +371,7 @@
 		};
 		25B1EFFA21B325CC00AC4A6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F4D2DEC860F431E6EACEF32 /* Pods-scapekit-arsession.release.xcconfig */;
+			baseConfigurationReference = 1C49B32F0DC64A0CB4D04549 /* Pods-scapekit-arsession.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

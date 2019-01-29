@@ -1,7 +1,6 @@
+ENABLE_BITCODE = NO
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/ScapeKit"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ScapeKit"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ScapeKit"
 OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"z" -framework "ARKit" -framework "AVFoundation" -framework "CoreLocation" -framework "CoreMotion" -framework "Foundation" -framework "ScapeKit" -framework "SceneKit" -framework "UIKit"
 OTHER_LDFLAGS[arch=arm64] = $(inherited) -framework Foundation -framework UIKit -framework CoreMotion -framework CoreLocation -framework AVFoundation -framework SceneKit -framework ARKit -lz -lstdc++
 PODS_BUILD_DIR = ${BUILD_DIR}

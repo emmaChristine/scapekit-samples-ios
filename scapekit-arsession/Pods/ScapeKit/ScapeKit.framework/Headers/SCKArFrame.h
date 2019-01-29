@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 @protocol SCKVideoFrame;
 
-/** public data object */
+/** public */
 @interface SCKArFrame : NSObject
 - (nonnull instancetype)initWithVideoFrame:(nullable id<SCKVideoFrame>)videoFrame
                                     camera:(nonnull SCKArCamera *)camera

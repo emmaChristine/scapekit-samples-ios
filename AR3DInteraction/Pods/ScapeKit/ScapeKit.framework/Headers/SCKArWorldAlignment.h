@@ -3,7 +3,7 @@
 
 #import <Foundation/Foundation.h>
 
-/** public enum */
+/** public */
 typedef NS_ENUM(NSInteger, SCKArWorldAlignment)
 {
     SCKArWorldAlignmentGravity,

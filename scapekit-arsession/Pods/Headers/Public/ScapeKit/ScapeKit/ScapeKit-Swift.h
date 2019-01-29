@@ -1,1 +1,0 @@
-../../../../ScapeKit/ScapeKit.framework/Headers/ScapeKit-Swift.h

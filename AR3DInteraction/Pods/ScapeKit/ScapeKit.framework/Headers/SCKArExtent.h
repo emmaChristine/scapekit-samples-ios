@@ -3,7 +3,7 @@
 
 #import <Foundation/Foundation.h>
 
-/** public data object */
+/** public */
 @interface SCKArExtent : NSObject
 - (nonnull instancetype)initWithX:(double)x
                                 y:(double)y
