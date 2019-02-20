@@ -33,44 +33,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07D849A13280E8C9EAEEC26F0E339189 /* SCKExecutorService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKExecutorService.h; path = ScapeKit.framework/Headers/SCKExecutorService.h; sourceTree = "<group>"; };
-		1CDBC13FE1AD5E18F86FE5AFCE771512 /* ScapeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ScapeKit.h; path = ScapeKit.framework/Headers/ScapeKit.h; sourceTree = "<group>"; };
-		256BBE353FF79401326BEFAA1E59F19D /* ScapeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScapeKit.framework; sourceTree = "<group>"; };
-		2B2A7216B62779FF1069D8B2F5A5F24C /* SCKArNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArNode.h; path = ScapeKit.framework/Headers/SCKArNode.h; sourceTree = "<group>"; };
+		0D98C926326A94075A39EFB69B881212 /* SCKMotionMeasurements.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKMotionMeasurements.h; path = ScapeKit.framework/Headers/SCKMotionMeasurements.h; sourceTree = "<group>"; };
+		0EA1C7838F283F2287C89A8D88F2E323 /* ScapeKit-Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ScapeKit-Private.h"; path = "ScapeKit.framework/Headers/ScapeKit-Private.h"; sourceTree = "<group>"; };
+		2C2B36E971F55734E80D1BF35562391B /* SCKArExtent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArExtent.h; path = ScapeKit.framework/Headers/SCKArExtent.h; sourceTree = "<group>"; };
+		2CB2C7B4676144FC4DA2D86A9CC35451 /* SCKArCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArCamera.h; path = ScapeKit.framework/Headers/SCKArCamera.h; sourceTree = "<group>"; };
+		2E45BA0F39A1D514E8440C05B8C3B4F0 /* SCKScapeSessionObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeSessionObserver.h; path = ScapeKit.framework/Headers/SCKScapeSessionObserver.h; sourceTree = "<group>"; };
+		303D639D554A0612E8A5E2305427A830 /* SCKArAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArAnchor.h; path = ScapeKit.framework/Headers/SCKArAnchor.h; sourceTree = "<group>"; };
+		3085F2AA734BE6C42CB40760BC44CD70 /* SCKGeoSourceType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKGeoSourceType.h; path = ScapeKit.framework/Headers/SCKGeoSourceType.h; sourceTree = "<group>"; };
 		309471E984FDA62DDE59F2D7DCB9BBC6 /* Pods-scapekit-arsession-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-scapekit-arsession-acknowledgements.plist"; sourceTree = "<group>"; };
-		40E6F1A1293A21DBA5CEB898189841F6 /* SCKArEulerAngles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArEulerAngles.h; path = ScapeKit.framework/Headers/SCKArEulerAngles.h; sourceTree = "<group>"; };
+		33E56A18D75F654C1AC9C46595CF2DE3 /* SCKArNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArNode.h; path = ScapeKit.framework/Headers/SCKArNode.h; sourceTree = "<group>"; };
+		33FB9C23B7985A491F85B684B0A3F84F /* SCKArFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArFrame.h; path = ScapeKit.framework/Headers/SCKArFrame.h; sourceTree = "<group>"; };
+		4097EE09BC153EA70238820EDB1E0861 /* SCKMeasurements.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKMeasurements.h; path = ScapeKit.framework/Headers/SCKMeasurements.h; sourceTree = "<group>"; };
 		45827E48142CD9F938039695F75E29C4 /* Pods-scapekit-arsession-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-scapekit-arsession-dummy.m"; sourceTree = "<group>"; };
-		45FBE0C74C93F206066743ECF7E410C9 /* SCKArWorldAlignment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArWorldAlignment.h; path = ScapeKit.framework/Headers/SCKArWorldAlignment.h; sourceTree = "<group>"; };
-		47B211CA3D21ADB6418F87D3B27E750C /* SCKArAlignment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArAlignment.h; path = ScapeKit.framework/Headers/SCKArAlignment.h; sourceTree = "<group>"; };
 		48482AC41E8CA014DFFC9668C47A0197 /* Pods-scapekit-arsession-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-scapekit-arsession-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5BEBF904ACFA23ABEC70FAE8776CD218 /* SCKArExtent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArExtent.h; path = ScapeKit.framework/Headers/SCKArExtent.h; sourceTree = "<group>"; };
-		5E3B7406A0A36EC4E84C5000920096D7 /* SCKGeoSourceType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKGeoSourceType.h; path = ScapeKit.framework/Headers/SCKGeoSourceType.h; sourceTree = "<group>"; };
-		6D2E728E0AF3BE4CD4F5300C7A2F0CEE /* SCKArPointCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArPointCloud.h; path = ScapeKit.framework/Headers/SCKArPointCloud.h; sourceTree = "<group>"; };
-		796561935E925B258DE228744E8E61B6 /* SCKArFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArFrame.h; path = ScapeKit.framework/Headers/SCKArFrame.h; sourceTree = "<group>"; };
-		79D8625507C190D530B1817DF3BA9866 /* SCKScapeSessionDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeSessionDetails.h; path = ScapeKit.framework/Headers/SCKScapeSessionDetails.h; sourceTree = "<group>"; };
-		7A2D66293E30DEDC76F6A5A3240C52E3 /* SCKGeoPose.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKGeoPose.h; path = ScapeKit.framework/Headers/SCKGeoPose.h; sourceTree = "<group>"; };
-		801FC95AB7B4BD04ED47821221D7BBB1 /* SCKArCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArCamera.h; path = ScapeKit.framework/Headers/SCKArCamera.h; sourceTree = "<group>"; };
-		8279393B79C2D33D2A4D2F312A67C78C /* SCKArCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArCenter.h; path = ScapeKit.framework/Headers/SCKArCenter.h; sourceTree = "<group>"; };
-		8802EB505795784668638C9D8848B99E /* ScapeKit-Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ScapeKit-Private.h"; path = "ScapeKit.framework/Headers/ScapeKit-Private.h"; sourceTree = "<group>"; };
-		9399B090F63A004C4381B4330EBA85A4 /* SCKVideoFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKVideoFrame.h; path = ScapeKit.framework/Headers/SCKVideoFrame.h; sourceTree = "<group>"; };
-		98C948C3B1168A06584EA01EB3674AB5 /* SCKLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKLog.h; path = ScapeKit.framework/Headers/SCKLog.h; sourceTree = "<group>"; };
+		4CB817EB080846D22A703B47D12C3901 /* SCKScapeOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeOrientation.h; path = ScapeKit.framework/Headers/SCKScapeOrientation.h; sourceTree = "<group>"; };
+		4F6126464635BAF018D88F9D23A7B3C8 /* SCKArCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArCenter.h; path = ScapeKit.framework/Headers/SCKArCenter.h; sourceTree = "<group>"; };
+		57E64BEE2447787B9B16A2ABB29E39BD /* SCKArEulerAngles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArEulerAngles.h; path = ScapeKit.framework/Headers/SCKArEulerAngles.h; sourceTree = "<group>"; };
+		6DFCD70929F19C67D3149FE851FE9F8D /* SCKArTrackingState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArTrackingState.h; path = ScapeKit.framework/Headers/SCKArTrackingState.h; sourceTree = "<group>"; };
+		741D1211760D2BC56FE276F4F49C8FDF /* SCKScapeSessionState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeSessionState.h; path = ScapeKit.framework/Headers/SCKScapeSessionState.h; sourceTree = "<group>"; };
+		74F10E19227445B396DE288725F5FCF4 /* SCKCoordinates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKCoordinates.h; path = ScapeKit.framework/Headers/SCKCoordinates.h; sourceTree = "<group>"; };
+		7725C19ECF3FD3D4E308727B0FCA342B /* SCKLogLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKLogLevel.h; path = ScapeKit.framework/Headers/SCKLogLevel.h; sourceTree = "<group>"; };
+		8EEDA6839ADCA8205888F3F82DAA9023 /* SCKArAlignment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArAlignment.h; path = ScapeKit.framework/Headers/SCKArAlignment.h; sourceTree = "<group>"; };
+		8FA648E64B74EA5365390BAAD858DAA7 /* SCKExecutorService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKExecutorService.h; path = ScapeKit.framework/Headers/SCKExecutorService.h; sourceTree = "<group>"; };
+		97990A10D3CB7CF9A79AFFB56A408845 /* SCKArSessionObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArSessionObserver.h; path = ScapeKit.framework/Headers/SCKArSessionObserver.h; sourceTree = "<group>"; };
+		9AE145B0269D5EDD379EDB4F270428D5 /* SCKArLight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArLight.h; path = ScapeKit.framework/Headers/SCKArLight.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DAFD7B82108F4F03458B1ADC8C0F53E /* SCKScapeSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeSession.h; path = ScapeKit.framework/Headers/SCKScapeSession.h; sourceTree = "<group>"; };
-		AA9D78D0573850A6E9E3E98D8B16F9E4 /* SCKArLight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArLight.h; path = ScapeKit.framework/Headers/SCKArLight.h; sourceTree = "<group>"; };
-		AC594277ED36BBA1AC7654A5C7FD6E61 /* ScapeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScapeKit.xcconfig; sourceTree = "<group>"; };
-		AC5EE027AA2E313B69EAD444F006FEEA /* SCKArPlane.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArPlane.h; path = ScapeKit.framework/Headers/SCKArPlane.h; sourceTree = "<group>"; };
-		B06CFA524D2F526015A686DA909AC559 /* SCKArSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArSession.h; path = ScapeKit.framework/Headers/SCKArSession.h; sourceTree = "<group>"; };
-		B81C642C9190DF8A2E5D4C17F8A82D05 /* SCKArAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArAnchor.h; path = ScapeKit.framework/Headers/SCKArAnchor.h; sourceTree = "<group>"; };
-		BD26A88AF2C0BADA5F940CEAA7BD9CD3 /* SCKFileInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKFileInfo.h; path = ScapeKit.framework/Headers/SCKFileInfo.h; sourceTree = "<group>"; };
+		9FD698B81A614131FDACD3E35046793A /* SCKLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKLog.h; path = ScapeKit.framework/Headers/SCKLog.h; sourceTree = "<group>"; };
+		B47DA99E1CFFB81D618D116C0B0C0760 /* SCKScapeMeasurements.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeMeasurements.h; path = ScapeKit.framework/Headers/SCKScapeMeasurements.h; sourceTree = "<group>"; };
+		B480B90422AB349FEB62594E670E847A /* SCKArPlane.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArPlane.h; path = ScapeKit.framework/Headers/SCKArPlane.h; sourceTree = "<group>"; };
+		B5FC7B155448B09A4D745784BA508142 /* SCKArSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArSession.h; path = ScapeKit.framework/Headers/SCKArSession.h; sourceTree = "<group>"; };
+		B6C32181F6526560561C3014BFF6F06D /* SCKLocationMeasurements.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKLocationMeasurements.h; path = ScapeKit.framework/Headers/SCKLocationMeasurements.h; sourceTree = "<group>"; };
+		BA0274DB29DFA1245293CD9A5DD570C0 /* SCKScapeSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeSession.h; path = ScapeKit.framework/Headers/SCKScapeSession.h; sourceTree = "<group>"; };
 		C090F000029EA01B58011EC823B8B5FA /* Pods-scapekit-arsession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-scapekit-arsession.debug.xcconfig"; sourceTree = "<group>"; };
-		C18BDC6D3F3811095580BBE22CA3FD51 /* SCKArSessionObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArSessionObserver.h; path = ScapeKit.framework/Headers/SCKArSessionObserver.h; sourceTree = "<group>"; };
-		D3F21B3C79FB94DA4B90276C26B3A135 /* SCKScapeOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeOrientation.h; path = ScapeKit.framework/Headers/SCKScapeOrientation.h; sourceTree = "<group>"; };
-		D6BDF2F3F13FA9DE920CE1A0C6C82942 /* SCKArTrackingState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArTrackingState.h; path = ScapeKit.framework/Headers/SCKArTrackingState.h; sourceTree = "<group>"; };
+		C0D08063B4DB1F5662AF65ECB30784AE /* SCKArPointCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArPointCloud.h; path = ScapeKit.framework/Headers/SCKArPointCloud.h; sourceTree = "<group>"; };
+		C48512A34DE3FCB3C9BC701A0203943F /* SCKArWorldAlignment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKArWorldAlignment.h; path = ScapeKit.framework/Headers/SCKArWorldAlignment.h; sourceTree = "<group>"; };
 		D9A32BA3DF938C5F299FAEF51428A358 /* libPods-scapekit-arsession.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-scapekit-arsession.a"; path = "libPods-scapekit-arsession.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBC7379DE01C5A3ABA96917FF8BA191F /* SCKCoordinates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKCoordinates.h; path = ScapeKit.framework/Headers/SCKCoordinates.h; sourceTree = "<group>"; };
-		DC8075CDF237D59F9501A5347CEF7FA8 /* SCKScapeSessionObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeSessionObserver.h; path = ScapeKit.framework/Headers/SCKScapeSessionObserver.h; sourceTree = "<group>"; };
-		EA8831256C00A4A22112342C56BFDEFE /* ScapeKit-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ScapeKit-Swift.h"; path = "ScapeKit.framework/Headers/ScapeKit-Swift.h"; sourceTree = "<group>"; };
-		F762B5D5C9978D4D0E0BAE6DDB0CB53F /* SCKScapeSessionState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeSessionState.h; path = ScapeKit.framework/Headers/SCKScapeSessionState.h; sourceTree = "<group>"; };
+		DBB7F63FAAFB576E8F1D1BD1372A0366 /* ScapeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScapeKit.xcconfig; sourceTree = "<group>"; };
+		E05FA1C2D67F795B5AE2C2AA43BD3C17 /* ScapeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ScapeKit.h; path = ScapeKit.framework/Headers/ScapeKit.h; sourceTree = "<group>"; };
+		E7183C23800779A874E47A612D25998D /* SCKScapeMeasurementsStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKScapeMeasurementsStatus.h; path = ScapeKit.framework/Headers/SCKScapeMeasurementsStatus.h; sourceTree = "<group>"; };
+		E8DC374E9D557962B9F6042E14774A80 /* SCKLogOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKLogOutput.h; path = ScapeKit.framework/Headers/SCKLogOutput.h; sourceTree = "<group>"; };
+		F23E2A6257C85270E5BFD36969330355 /* ScapeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScapeKit.framework; sourceTree = "<group>"; };
+		F2DF221814C86596C83A6FA080E4BFCC /* ScapeKit-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ScapeKit-Swift.h"; path = "ScapeKit.framework/Headers/ScapeKit-Swift.h"; sourceTree = "<group>"; };
+		FB3453168876ADDCC1FF734998119E87 /* SCKVideoFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCKVideoFrame.h; path = ScapeKit.framework/Headers/SCKVideoFrame.h; sourceTree = "<group>"; };
 		FCD67876373C1A9394A3EDD518F467B5 /* Pods-scapekit-arsession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-scapekit-arsession.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +102,50 @@
 			path = "Target Support Files/Pods-scapekit-arsession";
 			sourceTree = "<group>";
 		};
+		1783201C8D9A13F6575E0B6B75717E63 /* ScapeKit */ = {
+			isa = PBXGroup;
+			children = (
+				E05FA1C2D67F795B5AE2C2AA43BD3C17 /* ScapeKit.h */,
+				0EA1C7838F283F2287C89A8D88F2E323 /* ScapeKit-Private.h */,
+				F2DF221814C86596C83A6FA080E4BFCC /* ScapeKit-Swift.h */,
+				8EEDA6839ADCA8205888F3F82DAA9023 /* SCKArAlignment.h */,
+				303D639D554A0612E8A5E2305427A830 /* SCKArAnchor.h */,
+				2CB2C7B4676144FC4DA2D86A9CC35451 /* SCKArCamera.h */,
+				4F6126464635BAF018D88F9D23A7B3C8 /* SCKArCenter.h */,
+				57E64BEE2447787B9B16A2ABB29E39BD /* SCKArEulerAngles.h */,
+				2C2B36E971F55734E80D1BF35562391B /* SCKArExtent.h */,
+				33FB9C23B7985A491F85B684B0A3F84F /* SCKArFrame.h */,
+				9AE145B0269D5EDD379EDB4F270428D5 /* SCKArLight.h */,
+				33E56A18D75F654C1AC9C46595CF2DE3 /* SCKArNode.h */,
+				B480B90422AB349FEB62594E670E847A /* SCKArPlane.h */,
+				C0D08063B4DB1F5662AF65ECB30784AE /* SCKArPointCloud.h */,
+				B5FC7B155448B09A4D745784BA508142 /* SCKArSession.h */,
+				97990A10D3CB7CF9A79AFFB56A408845 /* SCKArSessionObserver.h */,
+				6DFCD70929F19C67D3149FE851FE9F8D /* SCKArTrackingState.h */,
+				C48512A34DE3FCB3C9BC701A0203943F /* SCKArWorldAlignment.h */,
+				74F10E19227445B396DE288725F5FCF4 /* SCKCoordinates.h */,
+				8FA648E64B74EA5365390BAAD858DAA7 /* SCKExecutorService.h */,
+				3085F2AA734BE6C42CB40760BC44CD70 /* SCKGeoSourceType.h */,
+				B6C32181F6526560561C3014BFF6F06D /* SCKLocationMeasurements.h */,
+				9FD698B81A614131FDACD3E35046793A /* SCKLog.h */,
+				7725C19ECF3FD3D4E308727B0FCA342B /* SCKLogLevel.h */,
+				E8DC374E9D557962B9F6042E14774A80 /* SCKLogOutput.h */,
+				4097EE09BC153EA70238820EDB1E0861 /* SCKMeasurements.h */,
+				0D98C926326A94075A39EFB69B881212 /* SCKMotionMeasurements.h */,
+				B47DA99E1CFFB81D618D116C0B0C0760 /* SCKScapeMeasurements.h */,
+				E7183C23800779A874E47A612D25998D /* SCKScapeMeasurementsStatus.h */,
+				4CB817EB080846D22A703B47D12C3901 /* SCKScapeOrientation.h */,
+				BA0274DB29DFA1245293CD9A5DD570C0 /* SCKScapeSession.h */,
+				2E45BA0F39A1D514E8440C05B8C3B4F0 /* SCKScapeSessionObserver.h */,
+				741D1211760D2BC56FE276F4F49C8FDF /* SCKScapeSessionState.h */,
+				FB3453168876ADDCC1FF734998119E87 /* SCKVideoFrame.h */,
+				C8FB9D52B6DA3A877EDFFB52F862F250 /* Frameworks */,
+				72C31E3594E6A4CC573041B562642B78 /* Support Files */,
+			);
+			name = ScapeKit;
+			path = ScapeKit;
+			sourceTree = "<group>";
+		};
 		196E9F7347E28E0F1C8D07B86E6633D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,60 +162,21 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		553B29BFDD85EBE48F4F13CEECB3BEB1 /* Frameworks */ = {
+		72C31E3594E6A4CC573041B562642B78 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				256BBE353FF79401326BEFAA1E59F19D /* ScapeKit.framework */,
+				DBB7F63FAAFB576E8F1D1BD1372A0366 /* ScapeKit.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ScapeKit";
+			sourceTree = "<group>";
+		};
+		C8FB9D52B6DA3A877EDFFB52F862F250 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F23E2A6257C85270E5BFD36969330355 /* ScapeKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7A57C33939EC8F105C32819D73CFEAA9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7F1262233C42C796A37B057B971E3EC8 /* ScapeKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		7F1262233C42C796A37B057B971E3EC8 /* ScapeKit */ = {
-			isa = PBXGroup;
-			children = (
-				1CDBC13FE1AD5E18F86FE5AFCE771512 /* ScapeKit.h */,
-				8802EB505795784668638C9D8848B99E /* ScapeKit-Private.h */,
-				EA8831256C00A4A22112342C56BFDEFE /* ScapeKit-Swift.h */,
-				47B211CA3D21ADB6418F87D3B27E750C /* SCKArAlignment.h */,
-				B81C642C9190DF8A2E5D4C17F8A82D05 /* SCKArAnchor.h */,
-				801FC95AB7B4BD04ED47821221D7BBB1 /* SCKArCamera.h */,
-				8279393B79C2D33D2A4D2F312A67C78C /* SCKArCenter.h */,
-				40E6F1A1293A21DBA5CEB898189841F6 /* SCKArEulerAngles.h */,
-				5BEBF904ACFA23ABEC70FAE8776CD218 /* SCKArExtent.h */,
-				796561935E925B258DE228744E8E61B6 /* SCKArFrame.h */,
-				AA9D78D0573850A6E9E3E98D8B16F9E4 /* SCKArLight.h */,
-				2B2A7216B62779FF1069D8B2F5A5F24C /* SCKArNode.h */,
-				AC5EE027AA2E313B69EAD444F006FEEA /* SCKArPlane.h */,
-				6D2E728E0AF3BE4CD4F5300C7A2F0CEE /* SCKArPointCloud.h */,
-				B06CFA524D2F526015A686DA909AC559 /* SCKArSession.h */,
-				C18BDC6D3F3811095580BBE22CA3FD51 /* SCKArSessionObserver.h */,
-				D6BDF2F3F13FA9DE920CE1A0C6C82942 /* SCKArTrackingState.h */,
-				45FBE0C74C93F206066743ECF7E410C9 /* SCKArWorldAlignment.h */,
-				DBC7379DE01C5A3ABA96917FF8BA191F /* SCKCoordinates.h */,
-				07D849A13280E8C9EAEEC26F0E339189 /* SCKExecutorService.h */,
-				BD26A88AF2C0BADA5F940CEAA7BD9CD3 /* SCKFileInfo.h */,
-				7A2D66293E30DEDC76F6A5A3240C52E3 /* SCKGeoPose.h */,
-				5E3B7406A0A36EC4E84C5000920096D7 /* SCKGeoSourceType.h */,
-				98C948C3B1168A06584EA01EB3674AB5 /* SCKLog.h */,
-				D3F21B3C79FB94DA4B90276C26B3A135 /* SCKScapeOrientation.h */,
-				9DAFD7B82108F4F03458B1ADC8C0F53E /* SCKScapeSession.h */,
-				79D8625507C190D530B1817DF3BA9866 /* SCKScapeSessionDetails.h */,
-				DC8075CDF237D59F9501A5347CEF7FA8 /* SCKScapeSessionObserver.h */,
-				F762B5D5C9978D4D0E0BAE6DDB0CB53F /* SCKScapeSessionState.h */,
-				9399B090F63A004C4381B4330EBA85A4 /* SCKVideoFrame.h */,
-				553B29BFDD85EBE48F4F13CEECB3BEB1 /* Frameworks */,
-				E85FF72EF5F31C55507C2594A1FEA1E7 /* Support Files */,
-			);
-			name = ScapeKit;
-			path = ScapeKit;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -175,7 +184,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				7A57C33939EC8F105C32819D73CFEAA9 /* Pods */,
+				EB54805B641E6DAB819470A9A8DF270F /* Pods */,
 				196E9F7347E28E0F1C8D07B86E6633D0 /* Products */,
 				28AB06DFB99F3D8231279E420812A676 /* Targets Support Files */,
 			);
@@ -188,13 +197,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E85FF72EF5F31C55507C2594A1FEA1E7 /* Support Files */ = {
+		EB54805B641E6DAB819470A9A8DF270F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AC594277ED36BBA1AC7654A5C7FD6E61 /* ScapeKit.xcconfig */,
+				1783201C8D9A13F6575E0B6B75717E63 /* ScapeKit */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ScapeKit";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +286,7 @@
 /* Begin XCBuildConfiguration section */
 		071ED805B56B7D9B5BB84901453AEF10 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC594277ED36BBA1AC7654A5C7FD6E61 /* ScapeKit.xcconfig */;
+			baseConfigurationReference = DBB7F63FAAFB576E8F1D1BD1372A0366 /* ScapeKit.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -442,7 +450,7 @@
 		};
 		9ADBCBFC86477801DE5681812FB58686 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC594277ED36BBA1AC7654A5C7FD6E61 /* ScapeKit.xcconfig */;
+			baseConfigurationReference = DBB7F63FAAFB576E8F1D1BD1372A0366 /* ScapeKit.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = NO;

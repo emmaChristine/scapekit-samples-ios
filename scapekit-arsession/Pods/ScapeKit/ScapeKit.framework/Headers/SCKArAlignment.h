@@ -3,7 +3,7 @@
 
 #import <Foundation/Foundation.h>
 
-/** public */
+/** (public) */
 typedef NS_ENUM(NSInteger, SCKArAlignment)
 {
     SCKArAlignmentHorizontal,

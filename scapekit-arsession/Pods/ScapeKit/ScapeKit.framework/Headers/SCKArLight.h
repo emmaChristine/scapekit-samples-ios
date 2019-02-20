@@ -3,7 +3,7 @@
 
 #import <Foundation/Foundation.h>
 
-/** public */
+/** (public) */
 @interface SCKArLight : NSObject
 - (nonnull instancetype)initWithAmbientIntensity:(double)ambientIntensity
                          ambientColorTemperature:(double)ambientColorTemperature;

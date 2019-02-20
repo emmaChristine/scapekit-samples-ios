@@ -166,7 +166,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ARKit;
 @import CoreGraphics;
 @import CoreLocation;
-@import CoreVideo;
+@import Foundation;
 @import ObjectiveC;
 @import SceneKit;
 @import UIKit;
@@ -191,6 +191,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
 @class SCNScene;
 @class NSCoder;
 
@@ -202,6 +204,15 @@ SWIFT_CLASS("_TtC8ScapeKit9SCKArView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+/// public
+/// The SCKConsole allows you to print your own logging to the a visual debugging console.
+SWIFT_CLASS("_TtC8ScapeKit10SCKConsole")
+@interface SCKConsole : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
 
@@ -282,6 +293,8 @@ SWIFT_PROTOCOL("_TtP8ScapeKit22SCKScapeClientObserver_")
 @end
 
 
+
+
 @interface SCKScapeOrientation (SWIFT_EXTENSION(ScapeKit))
 /// public
 /// Convert ScapeKit orientation to an actual SceneKit Quaternion
@@ -291,20 +304,13 @@ SWIFT_PROTOCOL("_TtP8ScapeKit22SCKScapeClientObserver_")
 - (CGFloat)roll SWIFT_WARN_UNUSED_RESULT;
 @end
 
-
-
 @class ARFrame;
 
 @interface SCKScapeSession (SWIFT_EXTENSION(ScapeKit))
-/// public
+/// (public)
 /// Set the ar frame manually (when SCKArSession is not used)
-- (void)setARFrame:(ARFrame * _Nonnull)arFrame;
-/// public
-/// Set the raw pixel buffer manually (when SCKArSession is not used)
-- (void)setCurrentPixelBuffer:(CVPixelBufferRef _Nonnull)pixelBuffer :(double)timestamp;
+- (void)setARFrame:(ARFrame * _Nonnull)arFrame :(CGSize)viewportSize;
 @end
-
-
 
 
 

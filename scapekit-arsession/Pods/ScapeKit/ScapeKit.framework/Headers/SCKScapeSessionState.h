@@ -4,29 +4,21 @@
 #import <Foundation/Foundation.h>
 
 /**
- * public
+ * (public)
  * Current session state
  */
 typedef NS_ENUM(NSInteger, SCKScapeSessionState)
 {
-    /** Started continuous GeoPose fetching at a given interval */
-    SCKScapeSessionStateStarted,
-    /** Stopped continuous GeoPose fetching */
-    SCKScapeSessionStateStopped,
-    /** Fetching GeoPose with built-in device's sensors is in progress */
-    SCKScapeSessionStateFetchingSensors,
-    /** Fetching GeoPose with Scape Vision Engine is in progress */
-    SCKScapeSessionStateFetchingScape,
-    /** Fetching GeoPose with built-in device's sensors is a success */
-    SCKScapeSessionStateSensorsLocalizationSuccess,
-    /** Fetching GeoPose with built-in device's sensors is a failure */
-    SCKScapeSessionStateSensorsLocalizationFailure,
-    /** Fetching GeoPose with Scape Vision Engine is a success */
-    SCKScapeSessionStateScapeLocalizationSuccess,
-    /** Fetching GeoPose with Scape Vision Engine is a failure */
-    SCKScapeSessionStateScapeLocalizationFailure,
-    /** Fetching GeoPose via Scape Vision Engine is not possible in the current area */
-    SCKScapeSessionStateUnavailableArea,
-    /** Fetching GeoPose resulted in an internal error */
-    SCKScapeSessionStateInternalServerError,
+    /** No current error to report */
+    SCKScapeSessionStateNoError,
+    /** Locations sensors (compass, gps) error  */
+    SCKScapeSessionStateLocationSensorsError,
+    /** Motion sensors (gyro, magnetometer) error */
+    SCKScapeSessionStateMotionSensorsError,
+    /** Scape Vision Engine error */
+    SCKScapeSessionStateVisionEngineError,
+    /** Authentication error */
+    SCKScapeSessionStateAuthenticationError,
+    /** Fetching measurements resulted in an unexpected error */
+    SCKScapeSessionStateUnexpectedError,
 };

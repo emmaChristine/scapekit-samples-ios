@@ -9,8 +9,6 @@
 
 
 #import "SCKExecutorService.h"
-#import "SCKFileInfo.h"
-
 
 
 

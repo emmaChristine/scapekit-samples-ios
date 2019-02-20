@@ -49,7 +49,7 @@ final class ARViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(didBecomeActive),
-                                               name: NSNotification.Name(rawValue: UIApplication.didBecomeActiveNotification.rawValue),
+                                               name: UIApplication.didBecomeActiveNotification,
                                                object: nil)
         
         self.view.addSubview(arView)
@@ -80,71 +80,51 @@ final class ARViewController: UIViewController {
     }
     
     /**
-     * Get a GeoPose using raw sensors only
+     * Get measurements using raw sensors only
      */
     @objc func localizeWithRawSensors(sender: UIButton!) {
-        scapeSession?.getCurrentGeoPose(usageType: .rawSensors,
-                                        geoPoseEstimated: { [weak self] details in
-                                            guard let `self` = self else {
-                                                return
-                                            }
-                                            self.onGeoPoseEstimated(details: details)
-                                            
-            },
-                                        sessionError: { [weak self] details in
-                                            guard let `self` = self else {
-                                                return
-                                            }
-                                            self.onScapeSessionError(details: details)
+        scapeSession?.getMeasurements(geoSourceType: SCKGeoSourceType.rawSensors,
+                                      deviceLocationMeasurementsUpdated: { measurements in
+            let gpsCoordinates = "\(String(describing: measurements?.coordinates?.latitude)) \(String(describing: measurements?.coordinates?.longitude)) "
+            print("Retrieving GPS coordinates: \(gpsCoordinates)")
+        },
+                                      deviceMotionMeasurementsUpdated: { measurements in
+                                        
+        },
+                                      scapeMeasurementsUpdated: { measurements in
+                                        
+        },
+                                      cameraTransformUpdated: { transform in
+                                        
+        },
+                                      sessionError: { state, error in
+            print("Could not retrieve measurements: \(error)")
         })
     }
 
     
     /**
-     * Get a GeoPose using raw sensors and Scape Vision Engine
+     * Get measurements using raw sensors and Scape Vision Engine
      */
     @objc func localizeWithSensorsAndVisionEngine(sender: UIButton!) {
-        scapeSession?.getCurrentGeoPose(usageType: .rawSensorsAndScapeVisionEngine,
-                                        geoPoseEstimated: { [weak self] details in
-                                            guard let `self` = self else {
-                                                return
-                                            }
-                                            self.onGeoPoseEstimated(details: details)
-                                            
+        scapeSession?.getMeasurements(geoSourceType: SCKGeoSourceType.rawSensorsAndScapeVisionEngine,
+                                      deviceLocationMeasurementsUpdated: { measurements in
+            let gpsCoordinates = "\(String(describing: measurements?.coordinates?.latitude)) \(String(describing: measurements?.coordinates?.longitude)) "
+            print("Retrieving GPS coordinates: \(gpsCoordinates)")
         },
-                                        sessionError: { [weak self] details in
-                                            guard let `self` = self else {
-                                                return
-                                            }
-                                            self.onScapeSessionError(details: details)
+                                      deviceMotionMeasurementsUpdated: { measurements in
+                                        
+        },
+                                      scapeMeasurementsUpdated: { measurements in
+            let scapeCoordinates = "\(String(describing: measurements?.coordinates?.latitude)) \(String(describing: measurements?.coordinates?.longitude)) "
+            print("Retrieving Scape coordinates: \(scapeCoordinates)")
+        },
+                                      cameraTransformUpdated: { transform in
+                                        
+        },
+                                      sessionError: { state, error in
+            print("Could not retrieve measurements: \(error)")
         })
-    }
-}
-
-private extension ARViewController {
-    func onScapeSessionStarted(details: SCKScapeSessionDetails) {
-        
-    }
-    
-    func onScapeSessionClosed(details: SCKScapeSessionDetails) {
-        
-    }
-    
-    func onScapeSessionError(details: SCKScapeSessionDetails) {
-        print("Could not retrieve scape coordinates: \(details.errorMessage)")
-        
-    }
-    
-    func onGeoPoseEstimated(details: SCKScapeSessionDetails) {
-        let gpsCoordinates = "\(details.geoPose.gpsCoordinates.latitude) \(details.geoPose.gpsCoordinates.longitude) "
-        print("Retrieving final GpsCoordinates: \(gpsCoordinates)")
-
-        // check if we got a successful result from Scape Vision Engine as we could have only got
-        // gps coordinates coming back from the raw sensors
-        if(details.currentState == .scapeLocalizationSuccess) {
-            let scapeCoordinates = "\(details.geoPose.scapeCoordinates?.latitude ?? 0.0) \(details.geoPose.scapeCoordinates?.longitude ?? 0.0) \(details.geoPose.scapeRawHeightEstimate ?? 0.0) "
-            print("Retrieving final ScapeCoordinates and height estimate: \(scapeCoordinates)")
-        }
     }
 }
 

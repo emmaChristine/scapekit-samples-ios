@@ -1,16 +1,16 @@
 PODS:
-  - ScapeKit (0.2.0)
+  - ScapeKit (0.3.0)
 
 DEPENDENCIES:
-  - ScapeKit (~> 0.2.0)
+  - ScapeKit (~> 0.3.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ScapeKit
 
 SPEC CHECKSUMS:
-  ScapeKit: df2cac525ac6e6cd77e6861a4fb26340609aa699
+  ScapeKit: 985259681da23db2df2aa4beddb5a79e2735b90a
 
-PODFILE CHECKSUM: a8803dbbe160a04076ce4a182a6095380d04f9ca
+PODFILE CHECKSUM: 683eb3140553e50e98812065ca7764c79174f938
 
 COCOAPODS: 1.6.0.beta.2

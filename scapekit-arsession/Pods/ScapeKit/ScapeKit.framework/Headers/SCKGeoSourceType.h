@@ -4,8 +4,8 @@
 #import <Foundation/Foundation.h>
 
 /**
- * public
- * Represents the desired source type used to fetch the GeoPose
+ * (public)
+ * Represents the desired source type used to fetch the Measurements
  */
 typedef NS_ENUM(NSInteger, SCKGeoSourceType)
 {
