@@ -8,52 +8,52 @@
 
 
 /**
- * public
+ * (public)
  * Simple abstraction layer sitting on top of ARKit/ARCore: 
  * allows using AR related features (camera pose, plane detection, world alignment) easily
  */
 @protocol SCKArSession
 
-/** public */
+/** (public) */
 - (void)startTracking;
 
-/** public */
+/** (public) */
 - (void)stopTracking;
 
-/** public */
+/** (public) */
 - (void)resetTracking;
 
-/** public */
+/** (public) */
 - (void)setWorldAlignment:(SCKArWorldAlignment)alignment;
 
-/** public */
+/** (public) */
 - (void)setPlaneDetection:(BOOL)detection;
 
-/** public */
+/** (public) */
 - (void)setDebugMode:(BOOL)debug;
 
-/** public */
+/** (public) */
 - (void)setLightEstimation:(BOOL)estimation;
 
-/** public */
+/** (public) */
 - (BOOL)isPlaneDetection;
 
-/** public */
+/** (public) */
 - (BOOL)isDebugMode;
 
-/** public */
+/** (public) */
 - (BOOL)isLightEstimation;
 
-/** public */
+/** (public) */
 - (SCKArWorldAlignment)getWorldAlignment;
 
-/** public */
+/** (public) */
 - (nonnull SCKArFrame *)getLastFrame;
 
-/** public */
+/** (public) */
 - (nullable id<SCKArSessionObserver>)getArSessionObserver;
 
-/** public */
+/** (public) */
 - (void)setArSessionObserver:(nullable id<SCKArSessionObserver>)arSessionObserver;
 
 @end

@@ -4,7 +4,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- * public
+ * (public)
  * Representing geolocation coordinates
  */
 @interface SCKCoordinates : NSObject

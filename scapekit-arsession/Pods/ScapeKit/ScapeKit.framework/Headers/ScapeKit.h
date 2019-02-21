@@ -34,14 +34,19 @@
 
 #import "SCKScapeSession.h"
 #import "SCKScapeSessionObserver.h"
-#import "SCKScapeSessionDetails.h"
 #import "SCKScapeSessionState.h"
 #import "SCKScapeOrientation.h"
 
 #import "SCKCoordinates.h"
-#import "SCKGeoPose.h"
+#import "SCKMeasurements.h"
+#import "SCKLocationMeasurements.h"
+#import "SCKMotionMeasurements.h"
+#import "SCKScapeMeasurements.h"
+#import "SCKScapeMeasurementsStatus.h"
 
 #import "SCKLog.h"
+#import "SCKLogLevel.h"
+#import "SCKLogOutput.h"
 
 #import "SCKVideoFrame.h"
 

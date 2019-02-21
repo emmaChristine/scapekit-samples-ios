@@ -3,7 +3,7 @@
 
 #import <Foundation/Foundation.h>
 
-/** public */
+/** (public) */
 @interface SCKArCenter : NSObject
 - (nonnull instancetype)initWithX:(double)x
                                 y:(double)y
